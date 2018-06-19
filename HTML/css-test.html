@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+    box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial;
+  font-size: 17px;
+  width: 100%;
+  height: 100%;
+  padding: 0px;
+  margin: 0px;
+  overflow-y: scroll;
+}
+
+#myVideo {
+  right: 0;
+  bottom: 0;
+  min-width: 100%; 
+  min-height: 100%;
+  width: 100%;
+  height: 100%
+}
+
+.content {
+  color: #f1f1f1;
+  width: 100%;
+  padding: 20px;
+  position: absolute;
+  top: 0;
+  position: fixed;
+}
+
+.content img {
+  width: 30px; 
+}
+.background-right{
+  float: right;
+}
+.background-left{
+  float: left;
+}
+.background1{
+  background-image: url(../IMAGE/homepage_section2_bg.png);
+  width: 100%;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  min-height: 650px;
+  background-size: cover;
+  font-size: 57px;
+  padding-top: 400px;
+  padding-left: 55px;
+}
+.background2{
+  background-image: url(../IMAGE/homepage_section3_bg.png);
+  width: 100%;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  min-height: 650px;
+  background-size: cover;
+  font-size: 57px;
+  padding-top: 478px;
+  padding-left: 55px;
+}
+.background3{
+  background-image: url(../IMAGE/homepage_section4_bg.png);
+  width: 100%;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  min-height: 650px;
+  background-size: cover;
+  font-size: 57px;
+  padding-top: 465px;
+  padding-left: 55px;
+}
+.background4{
+  background-image: url(../IMAGE/homepage_section5_bg.png);
+  width: 100%;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  min-height: 650px;
+  background-size: cover;
+  font-size: 57px;
+  padding-top: 423px;
+  padding-left: 55px;
+}
+.letter{
+  position: absolute;
+  top: 70%;
+  color: #fff;
+  font-size: 50px;
+  margin-left: 35px;
+}
+
+p{
+  margin: 0px;
+  padding: 0px;
+}
+ 
+ .common-btons{
+    width: 190px;
+    height: 50px;
+    background: #fff;
+    border: 2px solid cornflowerblue;
+    color: cornflowerblue;
+    font-size: 18px;
+}
+
+</style>
+</head>
+<body>
+  <div class="background-video">
+    <video autoplay muted loop id="myVideo">
+    <source src="../IMAGE/devnow_bg_video.mp4" type="video/mp4">
+    </video>
+    <div class="content">
+      <div class="background-left">
+        <img src="../IMAGE/imgpsh_fullsize.png">
+      </div>
+      <div class="background-right">
+        <img src="../IMAGE/menu.png">
+      </div>
+    </div>
+      <div class="letter">
+        <p>We are Developing Now</p>
+        <p><button class="btn common-btons">Explore ore work</button></p>
+      </div>
+  </div> 
+
+  <div class="background1">We create engaging platforms for the web, mobile iOS and Android.
+    <p><button class="btn common-btons">Explore ore work</button></p>
+  </div> 
+  <div class="background2">On the Cutting Edge of Fashion Tech
+    <p><button class="btn common-btons">Explore ore work</button></p>
+  </div>  
+  <div class="background3">Proven AR/VR capabilities
+    <p><button class="btn common-btons">Explore ore work</button></p>
+  </div>  
+  <div class="background4">We developed one of today's fastest growing music platforms
+    <p><button class="btn common-btons">Explore ore work</button></p>
+  </div>          
+
+</body>
+</html>
