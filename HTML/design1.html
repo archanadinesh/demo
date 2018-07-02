@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>design1 file</title>
+</head>
+ <style type="text/css">
+ body{
+  width: 100%;
+  padding: 0px;
+  margin: 0px;
+}
+.mainDIV, .dashboard{
+    position:relative;
+    background:yellow;
+    width:100%;
+    min-width:315px;
+    height: 67px;
+}
+.leftDIV{
+    position:absolute;
+    top:0px;
+    left:0px;
+    height:67px;
+    width:20%;
+    background: #72b5f7;
+}
+.middleDIV{
+    height:67px;
+    width:60%;
+    background: #3f4859;
+    margin:0px auto;
+}
+.rightDIV{
+    position:absolute;
+    top:0px;
+    right:0px;
+    height:67px;
+    width:20%;
+    background: #333e4d;
+}
+.dashboard{
+  position:relative;
+  background:yellow;
+  width:100%;
+  min-width:315px;
+  height: 600px;
+}
+
+.lef-div{
+	position:absolute;
+  top:0px;
+  left:0px;
+  height:600px;
+  width:18%;
+  background:#f5f9fa;
+}
+
+.right-div{
+	position:absolute;
+  top:0px;
+  right:0px;
+  height:600px;
+  width:82%;
+  background:#ebf2f5;
+}
+.leftDIV img{
+	float: left;
+  padding-left: 30px;
+  padding-top: 13px;
+}
+.leftDIV p{
+	font-size: 24px;
+  margin-left: 90px;
+  margin-top: 19px;
+  color: white;
+}
+.middleDIV img{
+	float: right;
+	padding-top: 10px;
+  padding-right: 13px;
+}
+.rightDIV img{
+  float: right;
+  margin-top: -50px;
+  margin-right: 51px;
+}
+.rightDIV p{
+	color: white;
+  padding-top: 10px;
+  padding-left: 23px;
+}
+.centerDIV{
+	width: 100%;
+	height: 50px;
+	background: white;
+}
+.centerDIV img{
+	float: right;
+	margin-top: -53px;
+  margin-right: 15px;
+}
+.centerDIV p{
+	padding-left: 36px;
+	font-size: 22px;
+}
+.lef-div p{
+	font-size: 20px;
+	margin-left: 40px;
+}
+.lef-div ul li{
+	list-style-type: none;
+  line-height: 35px;
+  color:darkgray;
+}
+.lef-div ul .active{
+	color:skyblue;
+}
+.notification{
+	float: right;
+  background:darkgray;
+  border-radius: 100%;
+  width: 19px;
+  position: 25px;
+  height: 19px;
+  padding-left: 3px;
+  padding-bottom: 3px;
+  text-align: center;
+  padding-right: 3px;
+  padding-top: 3px;
+  line-height: 22px;
+  color: #fff;
+  margin-right: 35px;
+}
+.right-div .part{
+	height: 200px;
+}
+.right-div .part1{
+	height: 200px;
+}
+.right-div .part2{
+	height: 200px;
+}
+.right-div .part3{
+	height: 200px;
+}
+
+.right-div div {
+	display: inline-block;
+	width: 24.66%;
+}
+.common4-btons{
+  float: left;
+  width: 80px;
+  height: 35px;
+  color: darkgray;
+  margin-left: 18px;
+}
+.common5-btons{
+	background: green;
+	float: left;
+  width: 80px;
+  height: 35px;
+  color: darkgray;
+  margin-left: 18px;
+}
+.right-div img{
+	float:left;
+	margin-top: 40px;
+	margin-left: 26px;
+}
+.right-div h3{
+	margin-left: 140px;
+	margin-top: 43px;
+}
+.right-div p{
+	margin-top: 0px;
+	margin-left: 140px;
+}
+
+</style>
+  <body>
+	  <div class="mainDIV">
+	    <div class="leftDIV">
+	    	<img src="../IMAGE/Layer_0.jpg">
+	    	<p>ERP System</p>
+	    </div>
+	    <div class="middleDIV">
+	    	<img src="../IMAGE/Layer_1.jpg">
+	    	<img src="../IMAGE/Layer_2.jpg">
+	    	<img src="../IMAGE/Layer_3.jpg">
+	    </div>
+	    <div class="rightDIV">
+	    	<p>Stephanie Smith</p>
+	    	<img src="../IMAGE/Layer_4.jpg">
+	    </div>
+    </div>
+    <div class="centerDIV">
+    	<P>Settings</P>
+    	<img src="../IMAGE/Layer_5.jpg">
+    </div>
+    <div class="dashboard">
+    	<div class="lef-div">
+    		<div class="section">
+    			<p>Modules</p>
+    			<ul>
+            <li class="active">Local Modules</li>
+            <li>Apps<span class="notification">5</span></li>
+            <li>Updates</li>
+         </ul> 
+    		</div>
+    		<div class="section1">
+    			<p>Account</p>
+    			<ul>
+    				<li>Activity</li>
+    				<li>Messages<span class="notification">4</span></li>
+    				<li>Downloads</li>
+    			</ul>
+    		</div>
+    		<div class="section2">
+    			<p>Configuration</p>
+    			<ul>
+    				<li>Credit Sales</li>
+    				<li>Channel Sales</li>
+    				<li>Direct Sales</li>
+    			</ul>
+    		</div>
+    	</div>
+    	<div class="right-div">
+    		<div class="part">
+    			<img src="../IMAGE/pic1.jpg">
+    			<h3>CRM</h3>
+    			<p>Leads,Opportunities,<br>Phone Calls</br></p>
+    			<button class="btn common5-btons">Install</button>
+    		</div>
+    		<div class="part1">
+    			<img src="../IMAGE/pic2.jpg">
+    			<h3>Social Network</h3>
+    			<p>Leads,Opportunities,<br>Phone Calls</br></p>
+    			<button class="btn common4-btons">Install</button>
+    		</div>
+    		<div class="part2">
+    			<img src="../IMAGE/pic3.jpg">
+    			<h3>Online Billing</h3>
+    			<p>Leads,Opportunities,<br>Phone Calls</br></p>
+    			<button class="btn common5-btons">Install</button>
+    		</div>
+    		<div class="part3">
+    			<img src="../IMAGE/pic4.jpg">
+    			<h3>Point of Sale</h3>
+    			<p>Leads,Opportunities,<br>Phone Calls</br></p>
+    			<button class="btn common4-btons">Install</button>
+    		</div>
+    	<div class="part">
+    			<img src="../IMAGE/picture1.jpg">
+    			<h3>Notes</h3>
+    			<p>Leads,Opportunities,<br>Phone Calls</br></p>
+    			<button class="btn common4-btons">Install</button>
+    		</div>
+    		<div class="part1">
+    			<img src="../IMAGE/picture2.jpg">
+    			<h3>Issue Tracking</h3>
+    			<p>Leads,Opportunities,<br>Phone Calls</br></p>
+    			<button class="btn common5-btons">Install</button>
+    		</div>
+    		<div class="part2">
+    			<img src="../IMAGE/picture3.jpg">
+    			<h3>Survey</h3>
+    			<p>Leads,Opportunities,<br>Phone Calls</br></p>
+    			<button class="btn common4-btons">Install</button>
+    		</div>
+    		<div class="part3">
+    			<img src="../IMAGE/picture4.jpg">
+    			<h3>Sales</h3>
+    			<p>Leads,Opportunities,<br>Phone Calls</br></p>
+    			<button class="btn common5-btons">Install</button>
+    		</div>
+    		<div class="part">
+    			<img src="../IMAGE/picture5.jpg">
+    			<h3>Timesheets</h3>
+    			<p>Leads,Opportunities,<br>Phone Calls</br></p>
+    			<button class="btn common5-btons">Install</button>
+    		</div>
+    		<div class="part1">
+    			<img src="../IMAGE/picture6.jpg">
+    			<h3>Address Book</h3>
+    			<p>Leads,Opportunities,<br>Phone Calls</br></p>
+    			<button class="btn common4-btons">Install</button>
+    		</div>
+    		<div class="part2">
+    			<img src="../IMAGE/picture7.jpg">
+    			<h3>Calender</h3>
+    			<p>Leads,Opportunities,<br>Phone Calls</br></p>
+    			<button class="btn common4-btons">Install</button>
+    		</div>
+    	</div>
+
+	</body>
+</html>
