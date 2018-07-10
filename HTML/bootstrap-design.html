@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Bootstrap</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script scr="../JS/jquery.min.js"></script>
+	<script scr="../JS/bootstrap.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="../CSS/bootstrap.css">
+	<meta charset="utf-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+    <meta charset="utf-8">
+    
+</head>
+<style type="text/css">
+.sub{
+	height: 600px;
+}
+.gap{
+	height: 700px;
+	margin-right: -32px;	
+}
+.sub1{
+	background: white;
+}
+.sub2{
+	height: 330px;
+}
+.text{
+	height: 280px;
+}
+p{
+	margin-left: 30px;
+  margin-top: -20px;
+}
+.web ul li{
+	display: inline-block;
+	line-height: 42px;
+	color:darkgray;
+}
+.web ul{
+	padding: 0px;
+  display: inline-grid;
+  margin: 0px;
+  margin-top: 60px;
+}
+.fas {
+	margin-right: 10px;
+}
+.save-btn {
+  border-radius: 23px;
+  font-size: 13px;
+  width: 138px;
+  height: 38px;
+  background: #03A9F4;
+  color: #FFF;
+}
+.dropdown-toggle{
+  border-radius: 100px;
+  width: 100px;
+  height: 36px;
+  background: #fff;
+  color: #9E9E9E;
+  border: 1px solid #eee;
+}
+.col-md-12 {
+   width: 100%;
+   margin-top: 20px;
+}
+.caret{
+	margin-left: 10px;
+}
+.list .active{
+	color:black;
+}
+.active i{
+	color:skyblue;
+}
+.fa-align-center{
+	color:darkgray;
+}
+.col-md-8{
+	padding-left: 95px;
+}
+.col-md-8 .test{
+	color:darkgray;
+}
+.fa-circle{
+	color:green;
+}
+.read{
+	margin-top: 0px;
+  margin-left: 0px;
+  color: darkgray;
+}
+.sub2 i{
+	color:darkgray;
+}
+h6{
+	color:skyblue;
+}
+
+.text input {
+	border-radius: 0px;
+  height: 40px;
+  border: 1px solid #eee;
+}
+
+.text select {
+	border-radius: 0px;
+  height: 40px;
+  border: 1px solid #eee;
+}
+.but .btn{
+	border-radius: 30px;
+	background: green;
+}
+#input_img {
+    position:absolute;
+    bottom:20px;
+    right:20px;
+    width:24px;
+    height:24px;
+}
+</style>
+<body>
+  <div class="container-fluid">
+  	<div class="row box">
+  		<div class="col-md-2">
+  			<div class="gap">
+		  		<div class="col-md-12">
+		  				<i class="fas fa-align-center"></i>
+		  				<div class="web">
+		  				<ul class="list">
+		  					<li><i class="fas fa-home"></i>HOME</li>
+			          <li class="active"><i class="fas fa-user-circle"></i>LEADS</li>
+			          <li><i class="fas fa-check-square"></i>TASKS</li>
+			          <li><i class="fas fa-images"></i>FORMS</li>
+			          <li><i class="fas fa-user-plus"></i>REFFERALS</li>
+			          <li><i class="fas fa-calendar-check"></i>CHECKLISTS</li>
+			          <li><i class="fas fa-calendar-alt"></i>CALENDAR</li>
+			          <li><i class="fas fa-cog"></i>SETTINGS</li>
+              </ul> 
+            </div>
+		  		</div>
+  			</div>
+  		</div>
+  		<div class="col-md-10">
+  			<div class="well sub1">
+  				<div class="row" style="height: 60px;">
+			  		<div class="col-md-4">
+			  				<span class="glyphicon glyphicon-search"></span>
+			  		</div>
+			  		<div class="col-md-4">
+			  			<div class="text-center"><i class="fas fa-th"></i></div>
+            </div>
+			  		<div class="col-md-4 ">
+			  			<div class="text-right">
+				  		  <span><i class="fas fa-bell"></i></span>
+				  			<span>Hello,shaun clarks<span class="caret"></span></span>
+			  			</div>
+			  		</div>
+  				</div>
+  				<div class="row" style="margin-bottom: 40px;">
+			  		<div class="col-md-8">
+			  		  <span style="font-size: 20px;margin-right: 20px;">Add a New Contact</span>
+			  			<span class="test">Source:<span style="margin-left:10px;">Facebook</span><span class="caret"></span></span>
+			  		</div>
+			  		<div class="col-md-4">
+			  				<button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown"><i class="fas fa-circle"></i>Lead
+                <span class="caret"></span></button>
+			  				<button type="button" class="btn save-btn">SAVE CONTACT</button>
+			  		</div>
+  				</div>
+  				<hr>
+  				<div class="row">
+			  		<div class="col-md-12">
+			  			<div class="sub2">
+					  		<div class="col-md-2">
+					  			<div class="text">
+					  				<h4>Add Contact</h4>
+					  				<h5>Form</h5>
+                    <i class="fas fa-minus"></i>					  			
+	 				  				<p class="read">only first name is required.other fields are optional.</p>
+					  				<h6>Need Help?</h6>
+					  			</div>
+					  		</div>
+						  	<div class="col-md-7">
+						  		<div class="text">
+						  			<div class="row">
+						  				<div class="col-md-6">
+						  					<div class="form-group">
+						  						<label>First Name:</label>
+												  <input type="email" class="form-control" id="email" placeholder="Shaun" name="email">
+						  					</div>
+						  				</div>
+					  					<div class="col-md-6">
+					  						<div class="form-group">
+						  						<label>Last Name:</label>
+												  <input type="email" class="form-control" id="email" placeholder="Clark" name="email">
+					  						</div>
+					  					</div>
+						  			</div>
+					  				<div class="row">
+					  					<div class="col-md-12">
+						  					<div class="form-group">
+	                        <label>Email Address:</label>
+										      <input type="email" class="form-control" id="email" placeholder="" name="email">
+										      <i class="far fa-envelope" id="input_img"></i>
+										    </div>
+					  					</div>
+					  				</div>
+					  				<div class="row">
+					  					<div class="col-md-12">
+						  					<div class="form-group">
+	                        <label>Phone:</label>
+										      <input type="email" class="form-control" id="email" placeholder="" name="email">
+										     <i class="fas fa-phone-volume" id="input_img"></i>
+										    </div>
+					  					</div>
+					  				</div>
+					  				<div class="row">
+											<div class="col-md-12">
+												<div class="form-group">
+										      <label>Case Type:</label>
+										      <select class="form-control">
+										     	  <option>Tamil</option>
+										     	  <option>Englist</option>
+										     	  <option>Maths</option>
+										      </select>
+										    </div>
+										    <span><small>Add a case type to make it easier to categorize cases.</small></span>
+										    <span class="pull-right"><small>Add Case Type</small></span>
+											</div>
+										</div>
+										<div class="row">
+											<div class="col-md-12">
+												<div class="form-group">
+											    <label>Add Notes:</label>
+											    <textarea class="form-control" rows="5">if you want you can add some notes here...</textarea>
+											  </div>
+											</div>
+										</div>
+										<div class="row">
+											<div class="col-md-12">
+												<div class="form-group">
+										      <label>Add Adverse Party:</label>
+										      <input type="email" class="form-control" id="email" placeholder="Search existing clients(82)" name="email">
+											  </div>
+											</div>
+										</div>
+										<div class="row">
+											<div class="col-md-12">
+												<div class="end">
+											  	<p2>Tags:BLUECHIP  TAXES</p2>
+											  </div>
+											</div>
+										</div>
+										<div class="row">
+											<div class="col-md-12">
+												<div class="figure">
+												  <P1>Additional Info:Location,additional numbers and contact information.</P1>
+												</div>
+											</div>
+										</div>
+
+										<div class="row">
+										  <div class="col-md-12">
+												<div class="form-group">
+										      <label>State:</label>
+										      <input type="email" class="form-control" id="email" placeholder="Ohio" name="email">
+										      <i class="fas fa-angle-down" id="input_img"></i>
+										    </div>
+											</div>
+										</div>
+										<div class="row">
+											<div class="col-md-12">
+												<div class="form-group">
+										      <label>Address:</label>
+										      <input type="email" class="form-control" id="email" placeholder="" name="email">
+										    </div>
+											</div>
+										</div>
+										<div class="row">
+											<div class="col-md-6">
+												<div class="form-group">
+													<label>City</label>
+												   <input type="email" class="form-control" id="email" placeholder="" name="email">
+													</div>
+												</div>
+											<div class="col-md-6">
+												<div class="form-group">
+													<label></label>
+												  <input type="email" class="form-control" id="email" placeholder="ZIP" name="email">
+												</div>
+											</div>
+										</div>
+										<div class="row">
+											<div class="col-md-12">
+												<div class="form-group">
+										      <label>Company Name:</label>
+										      <input type="email" class="form-control" id="email" placeholder="InvoiceSherpa LID." name="email">
+										    </div>
+											</div>
+										</div>
+										<div class="row">
+											<div class="col-md-6">
+												<div class="form-group">
+													<label>Office Telephone:</label>
+											    <input type="email" class="form-control" id="email" placeholder="" name="email">
+												</div>
+											</div>
+											<div class="col-md-6">
+												<div class="form-group">
+													<label>Office Telephone#2:</label>
+												  <input type="email" class="form-control" id="email" placeholder="" name="email">
+												</div>
+											</div>
+										</div>
+					  		  </div>
+						  	</div>
+					  		<div class="col-md-3">
+					  			<div class="rest">
+					  				<span>Schedule a Meeting</span>
+					  				<i class="fas fa-angle-down"></i>
+					  			</div>
+					  			<hr>
+					  			<div class="row">
+					  				<span>Intake Form</span>
+					  				<i class="fas fa-angle-up"></i>
+											<div class="col-md-12">
+												<div class="form-group">
+													<label>Send Intake form for your contact to fill it out:</label>
+											    <input type="email" class="form-control" id="email" placeholder="Select Form" name="email">
+												</div>
+											</div>
+										</div>
+										<div class="row">
+					  					<div class="col-md-12">
+						  					<div class="form-group">
+	                        <label></label>
+										      <input type="email" class="form-control" id="email" placeholder="Email Address" name="email">
+										      <i class="far fa-envelope" id="input_img"></i>
+										    </div>
+					  					</div>
+					  				</div>
+                          <div class="but">
+    					  				      <button type="button" class="btn">send</button>
+    					  				    </div>
+                         <div class="row">
+					  					     <div class="col-md-12">
+						  					     <div class="form-group">
+	                            <label>Schedule a Reminder</label>
+										          <input type="email" class="form-control" id="email" placeholder="Due At" name="email">
+										          <img src="https://cdn4.iconfinder.com/data/icons/36-slim-icons/87/calender.png" id="input_img">
+               
+										         </div>
+										       </div>
+					  					</div>
+					  					<div class="row">
+					  					<div class="col-md-12">
+						  					<div class="form-group">
+	                        <label></label>
+										      <input type="email" class="form-control" id="email" placeholder="Reminder options" name="email">
+										      <i class="fas fa-angle-down"></i>
+										    </div>
+					  					</div>
+					  				</div>
+					  				<span>Fill Intake form yourself if you know the necessary data.<br>Fill out the form</br></span>
+					  				<hr>
+					  				<span>Add Tasks</span>
+					  				<i class="fas fa-angle-down"></i>
+					  				<hr>
+					  				<span>Add Checklist</span>
+					  				<i class="fas fa-angle-down"></i>
+					  			</div>
+					  		</div>
+  				    </div>
+  			    </div>
+  		    </div>
+  			</div>
+  		</div>
+  	</div>
+  </div>
+</body>
+</html>
