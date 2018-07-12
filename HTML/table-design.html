@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Table</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+</head>
+<style type="text/css">
+.container{
+  text-align: center;
+  font-size: 30px;
+  margin-top: 30px;
+}
+.table-bordered {
+  border: 2px solid black;
+}
+.table-bordered td, .table-bordered th {
+  border: 2px solid black;
+}
+.table thead th {
+  border-bottom: 2px solid black;
+}
+</style>
+<body>
+<div class="container">
+  <h2>A Test Table With merged Cells</h2>            
+  <table class="table table-bordered">
+    <thead>
+      <tr>
+        <th rowspan="2"></th>
+        <th colspan="2">Average</th>
+        <th rowspan="2">Red eyes</th>
+      </tr>
+      <tr>
+      <th>data1</th>
+      <th>data2</th>
+    </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Males</td>
+        <td>1.9</td>
+        <td>0.003</td>
+        <td>40%</td>
+      </tr>
+      <tr>
+        <td>Females</td>
+        <td>1.7</td>
+        <td>0.002</td>
+        <td>43%</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+</body>
+</html>

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Table2</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+</head>
+<style type="text/css">
+.container{
+  text-align: center;
+  font-size: 20px;
+  margin-top: 30px;
+  background: skyblue;
+}
+.table-bordered {
+  border: 2px solid black;
+}
+.table-bordered td, .table-bordered th {
+  border: 2px solid black;
+}
+.table thead th {
+  border-bottom: 2px solid black;
+}
+.vericaltext{
+  width:1px;
+  word-wrap: break-word;
+  white-space:pre-wrap; 
+  padding: 50px;
+  line-height: 50px;
+}
+.sub1{
+  color:red;
+}
+.sub2{
+  color:green;
+}
+.sub3{
+  color:pink;
+}
+.sub4{
+  color:blue;
+}
+.sub5{
+  color:orange;
+}
+h2{
+  color: darkmagenta;
+}
+.text{
+  color:brown;
+}
+p{
+  color:chocolate;
+}
+</style>
+<body>
+<div class="container">
+  <h2>COLLEGE TIME TABLE</h2>            
+  <table class="table table-bordered">
+    <thead>
+      <tr>
+        <th>DAYS</th>
+        <th>8.30-9.30</th>
+        <th>9.30-10.30</th>
+        <th>10.30-11.30</th>
+        <th>11.30-12.30</th>
+        <th>12.30-2.00</th>
+        <th>2.00-3.00</th>
+        <th>3.00-4.00</th>
+        <th>4.00-5.00</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>MONDAY</td>
+        <td>---</td>
+        <td class="sub1">SUB1</td>
+        <td class="sub2">SUB2</td>
+        <td class="sub3">SUB3</td>
+        <td rowspan="6">
+          <p class="vericaltext">LUNCH</p>
+        </td>
+        <td class="sub4">SUB4</td>
+        <td class="sub5">SUB5</td>
+        <td>councelling class</td>
+      </tr>
+      <tr>
+        <td>TUESDAY</td>
+        <td class="sub1">SUB1</td>
+        <td class="sub2">SUB2</td>
+        <td class="sub3">SUB3</td>
+        <td>---</td>
+        <td class="sub4">SUB4</td>
+        <td class="sub5">SUB5</td>
+        <td>library</td>
+      </tr>
+      <tr>
+        <td>WEDNESDAY</td>
+        <td class="sub1">SUB1</td>
+        <td class="sub2">SUB2</td>
+        <td class="text">SWA</td>
+        <td>---</td>
+        <td colspan="3">
+          <p>lab</p>
+        </td>
+      </tr>
+      <tr>
+        <td>THURSDAY</td>
+        <td class="sub1">SUB1</td>
+        <td class="sub2">SUB2</td>
+        <td class="sub3">SUB3</td>
+        <td>---</td>
+        <td class="sub4">SUB4</td>
+        <td class="sub5">SUB5</td>
+        <td>library</td>
+      </tr>
+      <tr>
+        <td>FRIDAY</td>
+        <td class="sub1">SUB1</td>
+        <td class="sub2">SUB2</td>
+        <td class="sub3">SUB3</td>
+        <td>---</td>
+        <td class="sub4">SUB4</td>
+        <td class="sub5">SUB5</td>
+        <td>library</td>
+      </tr>
+      <tr>
+        <td>SATURDAY</td>
+        <td class="sub1">SUB1</td>
+        <td colspan="3">seminar</td>
+        <td class="sub4">SUB4</td>
+        <td class="sub5">SUB5</td>
+        <td>library</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+</body>
+</html>
