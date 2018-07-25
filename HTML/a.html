@@ -1,0 +1,54 @@
+<html lang="en">
+<head>
+    <title>Example of HTML Text Field</title>
+
+</head>
+<body>
+  <form onsubmit="validation()">
+    <label for="user-name">Firstname:</label>
+    <input type="text" name="username" id="user-name" value=""><br><br>
+    <label for="user-name">Lastname:</label>
+    <input type="text" name="username" id="Last-name" value=""><br><br>
+    <label for="user-name">Email:</label>
+    <input type="text" name="username" id="email" ><br><br>
+    <label for="user-name">Password:</label>
+    <input type="password" name="username" id="password-name" value=""><br><br>
+    <label for="user-name">Password confirmation:</label>
+    <input type="password" name="username" id="confirmation-name" value=""><br><br>
+    <button type="submit">create</button>
+    
+  </form>
+    <p id="demo"></p>
+</body>
+</html>  
+
+<script type="text/javascript">
+function validation() {
+	var first = document.getElementById("user-name").value
+	var Last = document.getElementById("Last-name").value
+  var email = document.getElementById("email").value
+  var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+  var password = document.getElementById("password-name").value
+  var confirmation = document.getElementById("confirmation-name").value
+  
+  if(first == "") {
+	 alert("please enter first name");
+	}
+	else if(Last == "") {
+	  alert("please enter Last name");
+	}
+
+	else if(!re.test(email)){
+    alert("Please enter a valid email");
+  } 
+  else if(password != confirmation) {
+	  alert("Passwords do not match.");
+	  return false;
+	}
+	   
+ else{
+ 	document.getElementById("demo").innerHTML = "sucess";
+ }
+}
+
+</script>

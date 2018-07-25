@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<style type="text/css">
+#btn{
+  margin-left: 620px;
+  margin-top: 200px;
+}
+#sub{
+  margin-left: 100px;
+  text-align: center;
+  color: red;
+  font-size: 60px;
+  margin-top: 290px;
+}
+#myH2{
+  color:green;
+}
+  
+</style>
+<body>
+  <p id="sub" >Beautiful Color in <span id="myH2">"SKYBLUE"</span></p>
+  <button id="btn">Click</button>
+<script>
+  window.onclick = myFunction;
+  function myFunction() { 
+  document.getElementsByTagName("BODY")[0].style.backgroundColor = "skyblue"; 
+  document.getElementById("myH2").style.color = "red";
+}
+</script>
+</body>
+</html>
+

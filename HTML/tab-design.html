@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Tab-design</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script scr="../JS/jquery.min.js"></script>
+	<script scr="../JS/bootstrap.min.js"></script>
+	<!-- <link rel="stylesheet" type="text/css" href="../CSS/bootstrap.css"> -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<style type="text/css">
+
+ .well{
+ 	background-color: darkgreen;
+ 	border:0px;
+ 	padding: 0px;
+  font-size: 20px;
+  color: white;
+  margin-bottom: 0px;
+  padding-top: 25px;
+  border-radius: 0px;
+}
+.nav{
+	background:#f7f7f7;
+	padding: 15px;
+  color:black;
+}
+.col-md-8{
+  background: #f7f7f7;
+}
+.sub-1{
+	background: #c7c6b3;
+	padding: 15px;
+  height: 150vh;
+}
+.sub{
+  height: 150vh;
+}
+.text-center{
+  height: 85px;
+  text-align: left;
+}
+.tab ul li{
+  list-style-type: none;
+}
+.badge{
+  background: green;
+  float: right;
+}
+a {
+  color: black;
+  text-decoration: none;
+  margin-left: 20px;
+}
+.read a{
+  font-size: 20px;
+
+}
+h1{
+  font-size: 25px;
+}
+
+.pic span{
+  float: right;
+  margin-right: 70px;
+}
+.pic1 span{
+  float: right;
+  margin-right: 35px;
+}
+.extra span{
+  float: right;
+  margin-top: -30px;
+  color:green;
+}
+.extra p{
+  color:green;
+}
+.cut-info{
+  padding: 17px 43px 0px 48px;
+  margin-top: 21px;
+}
+h3{
+  margin-top: 27px;
+}
+.cut{
+  padding: 17px 43px 0px 48px;
+  margin-top: 21px;
+}
+.example span{
+  float: right;
+}
+/*.example p{
+  margin: 0 0 10px;
+  width: 165px;
+  height: 165px;
+  background: white;
+  border: 1px solid black;
+  padding-left: 10px;
+}*/
+.tab-content>.active {
+  display: block;
+  margin-top: 100px;
+}
+.excel span {
+   margin-top: -237px;
+   margin-right: 281px;
+}
+/*.implement span{
+  margin: 30px 0px 10px 0px;
+  width: 250px;
+  height: 120px;
+  background: white;
+  border: 1px solid black;
+  padding-left: 20px;
+  float:left;
+  padding-top: 10px;
+}
+.implement h1{
+  font-size: 15px;
+  float: right;
+  margin-top: 5px;
+  margin-right: 10px;
+}
+.energy span{
+  width: 260px;
+  height: 120px;
+  background: white;
+  border: 1px solid black;
+  padding-left: 15px;
+  margin-right: 200px;
+  margin-top: 30px;
+  padding-top:  10px;
+}
+.energy h1{
+  font-size: 15px;
+  float: right;
+  margin-top: 5px;
+  margin-right: 10px;
+}
+*/
+  /* The container-radio */
+.container-radio {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* Hide the browser's default radio button */
+.container-radio input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+/* Create a custom radio button */
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+    border-radius: 50%;
+}
+
+/* On mouse-over, add a grey background color */
+.container-radio:hover input ~ .checkmark {
+    background-color: #ccc;
+}
+
+/* When the radio button is checked, add a blue background */
+.container-radio input:checked ~ .checkmark {
+    background-color: #2196F3;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.container-radio input:checked ~ .checkmark:after {
+    display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.container-radio .checkmark:after {
+  top: 9px;
+  left: 9px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: white;
+}
+
+.address-information, .shippin-informaion{
+  width: 100%;
+  height: 300px;
+  border: 1px solid #eee;
+  margin-bottom: 50px;
+  padding: 50px;
+  background: white;
+}
+.top{
+  margin-top: 53px;
+}
+.payment-box{
+  width: 100%;
+  border: 1px solid #ddd;
+  margin-bottom: 50px;
+  padding: 50px;
+  background: white;
+}
+.select{
+  background: white;
+}
+.select span{
+  font-weight: bold;
+}
+img{
+  margin-left: 7px;
+}
+.card img{
+  float: right;
+  margin-top: -25px;
+  margin-right: 10px;
+}
+.test img{
+  margin-top: -33px;
+  float: right;
+}
+.btn {
+  float: right;
+  margin-top: -40px;
+}
+</style>
+<body>
+  <div class="container-fluid">
+  	<div class="row box">
+  		<div class="well text-center"></div>
+  	</div>
+    <div class="row">
+      <div class="col-md-8">
+        <div class="col-md-12">
+          <ul class="nav nav-pills">
+            <li class="active"><a data-toggle="pill" href="#home">01 CUSTOMER INFO</a></li>
+              <li><a data-toggle="pill" href="#menu1">02 SHIPPING INFO</a></li>
+              <li><a data-toggle="pill" href="#menu2">03 PAYMENT SELECTION</a></li>
+          </ul>
+        </div>
+        <div class="tab-content">
+          <div id="home" class="tab-pane fade in active">
+            <div class="cut-info">
+              <h3>Customer Information</h3>
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label>First Name</label>
+                    <input type="email" class="form-control" id="email" placeholder="" name="email">
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label>Last Name</label>
+                    <input type="email" class="form-control" id="email" placeholder="" name="email">
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="form-group">
+                    <label>Shipping Address</label>
+                    <input type="email" class="form-control" id="email" placeholder="" name="email">
+                    <i class="far fa-envelope" id="input_img"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="form-group">
+                    <label>Address2</label>
+                    <input type="email" class="form-control" id="email" placeholder="" name="email">
+                    <i class="far fa-envelope" id="input_img"></i>
+                  </div>
+                </div>
+              </div> 
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label>Country</label>
+                    <input type="email" class="form-control" id="email" placeholder="United States" name="email">
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label>Region</label>
+                    <input type="email" class="form-control" id="email" placeholder="Connecticut" name="email">
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="form-group">
+                    <label>City</label>
+                    <input type="email" class="form-control" id="email" placeholder="Select your City" name="email">
+                    <i class="far fa-envelope" id="input_img"></i>
+                  </div>
+                </div>
+              </div> 
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label>Postal Code</label>
+                    <input type="email" class="form-control" id="email" placeholder="" name="email">
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label>Phone Number</label>
+                    <input type="email" class="form-control" id="email" placeholder="" name="email">
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="form-group">
+                    <label>Email Address</label>
+                    <input type="email" class="form-control" id="email" placeholder="Select your City" name="email">
+                    <i class="far fa-envelope" id="input_img"></i>
+                  </div>
+                </div>
+              </div>
+              <span>Sign me up for the Medleaf Newsletter(we will never span you</span>) 
+              
+            </div>
+          </div>
+          <div id="menu1" class="tab-pane fade example">
+            <div class="cut-info">
+              <div class="implement">
+                <div class="row">
+                  <div class="col-md-6 ">
+                    <h3>Shipping Information</h3>
+                    <div class="address-information top">
+                      <p>Samuel Bifalco</p>
+                      <p>123 Mociking Bird Lane</p>
+                      <p>PH123</p>
+                      <p>Sheiton,CT</p>
+                      <p>06484</p>
+                      <p>Tel:(203)-559-5195</p>
+                      <p>Edit Address</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                      <h3>Billing Information</h3>
+                      <label class="container-radio">Same as Shipping
+                         <input type="radio" checked="checked" name="radio">
+                         <span class="checkmark"></span>
+                      </label>
+                     <div class="address-information">
+                       <p>Samuel Bifalco</p>
+                      <p>123 Mociking Bird Lane</p>
+                      <p>PH123</p>
+                      <p>Sheiton,CT</p>
+                      <p>06484</p>
+                      <p>Tel:(203)-559-5195</p>
+                      <p>Edit Address</p>
+                     </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <h3>Shipping Method</h3>
+                  <div class="col-md-6">
+                    <div class="shippin-informaion">
+                      <div class="row">
+                        <div class="col-md-2">
+                          <label class="container-radio">
+                            <input type="radio" checked="checked" name="radio">
+                            <span class="checkmark"></span>
+                          </label>
+                        </div>
+                        <div class="col-md-8">
+                          Pick Up
+                          <p>Ready in 20 minutes.</p>
+                        </div>
+                        <div class="col-md-2">
+                          Free
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="shippin-informaion">
+                      <div class="row">
+                        <div class="col-md-2">
+                          <label class="container-radio">
+                            <input type="radio" checked="checked" name="radio">
+                            <span class="checkmark"></span>
+                          </label>
+                        </div>
+                        <div class="col-md-8">
+                          Standard Delivery
+                          <p>Estimated 5-7 Day Shipping<br>(Duties and taxes may be due upon delivery)</p>
+                        </div>
+                        <div class="col-md-2">
+                          Free
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="menu2" class="tab-pane fade">
+            <div class="cut-info">
+              <h3>Payment Selection</h3>
+              <div class="row">
+                <div class="col-md-12 payment-box">
+                  <div class="col-md-1">
+                      <label class="container-radio">
+                        <input type="radio" checked="checked" name="radio">
+                        <span class="checkmark"></span>
+                      </label>
+                    </div>
+                  <div class="col-md-9 select">
+                    <span>Email Only</span>
+                    <p>Email Reciepts will be sent to both you and the seller,bring your reciept in with you to pay in store.</p>
+                  </div>
+                  <div class="col-md-2">
+                    <img src="../IMAGE/message-box.png">
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-12 payment-box">
+                  <div class="row">
+                    <div class="col-md-1">
+                        <label class="container-radio">
+                          <input type="radio" checked="checked" name="radio">
+                          <span class="checkmark"></span>
+                        </label>
+                      </div>
+                    <div class="col-md-7 select">
+                      <span>Debit or Credit Card</span>
+                      <p>Safe money transfer using your bank account.Visa,MasterCard,Discover,American Express.</p>
+                    </div>
+                    <div class="col-md-4">
+                      <img src="../IMAGE/mastercard.png">
+                      <img src="../IMAGE/visacard.png">
+                      <img src="../IMAGE/amex.png">
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-12 card">
+                      <div class="form-group">
+                      <label>Card Number</label>
+                      <input type="email" class="form-control" id="email" placeholder="0000 0000 0000 0000" name="email">
+                       <img src="../IMAGE/line-box.png">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-6 card">
+                      <div class="form-group">
+                      <label>Name on Card</label>
+                      <input type="email" class="form-control" id="email" placeholder="" name="email">
+                      </div>
+                    </div>
+                    <div class="col-md-3 card">
+                      <div class="form-group">
+                      <label>Expiration Date</label>
+                      <input type="email" class="form-control" id="email" placeholder="MM/YY" name="email">
+                      </div>
+                    </div>
+                    <div class="col-md-3 test">
+                      <div class="form-group">
+                      <label>CCV Code</label>
+                      <input type="email" class="form-control" id="email" placeholder="" name="email">
+                       <img src="../IMAGE/question.png">
+                      </div>
+                    </div>            
+                  </div>
+                </div>
+                  <div class="row">
+                   <div class="col-md-12 payment-box">
+                    <div class="col-md-1">
+                      <label class="container-radio">
+                        <input type="radio" checked="checked" name="radio">
+                        <span class="checkmark"></span>
+                      </label>
+                    </div>
+                   <div class="col-md-9 select">
+                    <span>PayPal</span>
+                    <p>You will be redirected to PayPal Website to complete your purchase securely.</p>
+                   </div>
+                  <div class="col-md-2">
+                    <img src="../IMAGE/paypal.png">
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                   <div class="col-md-12 payment-box">
+                    <div class="col-md-1">
+                      <label class="container-radio">
+                        <input type="radio" checked="checked" name="radio">
+                        <span class="checkmark"></span>
+                      </label>
+                    </div>
+                   <div class="col-md-9 select">
+                    <span>Bitcoin</span>
+                    <p>You will be asked to enter your Bitcoin Wallet ID to transfer funds.</p>
+                   </div>
+                  <div class="col-md-2">
+                    <img src="../IMAGE/bitcoin.png">
+                  </div>
+                </div>
+              </div>
+              <div class="ship">
+                <p><img src="../IMAGE/arrow-left.png">Back to Shipping Info</p>
+                <button type="button" class="btn btn-success">COMPLETE ORDER</button>
+             </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 sub-1 read">
+       <div class="cut">
+        <div class="row">
+              <div class="col-md-12">
+                <a href="#">Shopping Cart<span class="badge">2</span></a><br>
+              </div>
+            </div> 
+            <hr>
+           <div class="pic">
+            <h1>{Source 1}</h1> 
+            <img src="../IMAGE/cart.png">
+            <span>Lightweight College<br>Backpack<br>$20.00</span>
+          </div>
+          <div class="pic1">
+            <img src="../IMAGE/cart1.png">
+            <span>Business Casual Leather<br>Watch Waterproof<br>$45.00</span>
+          </div>
+          <div class="pic">
+            <h1>{Source 2}</h1> 
+            <img src="../IMAGE/cart.png">
+            <span>Lightweight College<br>Backpack<br>$20.00</span>
+          </div>
+          <hr>
+          <p>Have a Discount Code?</p>
+          <hr>
+          <div class="extra">
+            <p>Subtotal</p>
+            <span>$100.00</span>
+            <p>Shipping</p>
+            <span>Free</span>
+          <hr>
+          <p>Total</p>
+          <span>$100.00</span>
+        </div>
+      </div>
+      </div>
+    </div>
+  </div>
+  </body>
+</html>
+              
+            
+     

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Date and Time </h2>
+
+<p >Hours : <span id="time"></span> <br>  Message: <span id="demo"></span></p>
+
+<script>
+var d = new Date();
+console.log(d)
+var today = new Date();
+var n = today.getHours();
+document.getElementById("time").innerHTML = n;
+console.log()
+switch(true) {
+  case n >18:
+    document.getElementById("demo").innerHTML = "Good Night ";
+  break;
+  case n > 12:
+    document.getElementById("demo").innerHTML = "good Afternoon";
+  break;
+  case n > 9:
+    document.getElementById("demo").innerHTML = "good Morning ";
+  break;
+} 
+</script>
+</body>
+</html> 
+
+
+ 

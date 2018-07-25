@@ -1,0 +1,32 @@
+<html lang="en">
+<head>
+    <title>Example of HTML Text Field</title>
+
+</head>
+<body>
+  <form onsubmit="validation()">
+    <label for="user-name">Email:</label>
+    <input type="text" name="username" id="email" value=""><br><br><br>
+    <button type="submit">enter</button>
+  </form>
+    
+</body>
+</html>  
+
+<script>
+$(document).ready(function(){
+
+var re = /(\w+)\@(\w+)\.[a-zA-Z]/g;
+var email = getElementById("email");
+var emailValue = email.value;
+var testEmail = re.test(emailValue);
+
+    $('#submit').click(function(){
+    if(!testEmail){
+        alert("Please enter a valid email");
+    } else {
+        confirm("Is " + emailValue + " the email you want to use?");
+    }
+    });
+});
+</script>
