@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>javascript form validation</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="../CSS/bootstrap.css">
+</head>
+<body>
+<h2>Please Fill in this Form:</h2>
+<form action="#" method="post" onsubmit=" return validation();">
+<div class="container">
+  <div class="row">
+ 	  <div class="form-group">
+      <label for="email"><b>Email</b></label>
+      <input type="email" name="email" id="email" ><br><br>
+ 	  </div>
+  </div>
+ <div class="row">
+   <label for="psw">Password</label>
+   <input type="password" id="psw" name="psw" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required>
+ </div>
+<div id="message">
+  <h3>Password must contain the following:</h3>
+  <p id="letter" class="invalid">A <b>lowercase</b> letter</p>
+  <p id="capital" class="invalid">A <b>capital (uppercase)</b> letter</p>
+  <p id="number" class="invalid">A <b>number</b></p>
+  <p id="length" class="invalid">Minimum <b>8 characters</b></p>
+  <p id="length" class="invalid">Maximum <b>15 characters</b></p>
+</div>
+
+<div>
+  <label for="First Name"><b>First Name</b></label>
+  <input type="First Name" name="First Name" id="First Name" ><br><br>
+</div>
+<div>
+  <label for="Last Name"><b>Last Name</b></label>
+  <input type="Last Name" name="Last Name" id="Last Name" ><br><br>
+</div>
+<div>
+  <label for="Address"><b>Address</b></label>
+  <input type="Address" name="Address" id="Address" ><br><br>
+</div>
+<div>
+  <label for="Country"><b>Country</b></label>
+  <input type="Country" name="Country" id="Country" ><br><br>
+</div>
+<div>
+  <label for="State"><b>State</b></label>
+  <input type="State" name="State" id="State" ><br><br>
+</div>
+<div>
+  <label for="City"><b>City</b></label>
+  <input type="City" name="City" id="City" ><br><br>
+</div>
+<div>
+  <label for="Pincode"><b>Pincode</b></label>
+  <input type="Pincode" name="Pincode" id="Pincode" ><br><br>
+</div>
+<div>
+  <label for="Age"><b>Age</b></label>
+  <input type="Age" name="Age" id="Age" ><br><br>
+</div>
+<div>
+  <label for="Gender"><b>Gender</b></label>
+  <input type="Gender" name="Gender" id="Gender" ><br><br>
+</div>
+<div>
+  <label for="Profile Photo"><b>Profile Photo</b></label>
+  <input type="Profile Photo" name="Profile Photo" id="Profile Photo" ><br><br>
+</div> -->
+  <input type="submit" name="submit" value="submit">
+</form>
+<div id="eresult" style="color:red;"></div>
+<script type="text/javascript">
+ function validation(){
+ var email = document.getElementById("email").value;
+ var password = document.getElementById("password").value;
+ if( =='' || =='')
+ {
+ 	document.getElementById("eresult").innerHTML="all field required"; 
+  return false;
+}
+else{
+	return ture;
+}
+}
+
+</script>
+</body>
+</html>
+ -->
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+}
+
+input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.container {
+    background-color: #f1f1f1;
+    padding: 20px;
+}
+
+
+#message {
+    display:none;
+    background: #f1f1f1;
+    color: #000;
+    position: relative;
+    padding: 20px;
+    margin-top: 10px;
+}
+
+#message p {
+    padding: 10px 35px;
+    font-size: 18px;
+}
+
+.valid {
+    color: green;
+}
+
+.valid:before {
+    position: relative;
+    left: -35px;
+    content: "✔";
+}
+
+.invalid {
+    color: red;
+}
+
+.invalid:before {
+    position: relative;
+    left: -35px;
+    content: "✖";
+}
+</style>
+</head>
+<body>
+
+<h3>Password Validation</h3>
+<p>Try to submit the form.</p>
+
+<div class="container">
+  <form action="/action_page.php">
+    <label for="usrname">Username</label>
+    <input type="text" id="usrname" name="usrname" required>
+
+    <label for="psw">Password</label>
+    <input type="password" id="psw" name="psw" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required>
+    
+    <input type="submit" value="Submit">
+  </form>
+</div>
+
+<div id="message">
+  <h3>Password must contain the following:</h3>
+  <p id="letter" class="invalid">A <b>lowercase</b> letter</p>
+  <p id="capital" class="invalid">A <b>capital (uppercase)</b> letter</p>
+  <p id="number" class="invalid">A <b>number</b></p>
+  <p id="length" class="invalid">Minimum <b>8 characters</b></p>
+</div>
+				
+<script>
+var myInput = document.getElementById("psw");
+var letter = document.getElementById("letter");
+var capital = document.getElementById("capital");
+var number = document.getElementById("number");
+var length = document.getElementById("length");
+
+
+myInput.onfocus = function() {
+    document.getElementById("message").style.display = "block";
+}
+
+
+myInput.onblur = function() {
+    document.getElementById("message").style.display = "none";
+}
+
+
+myInput.onkeyup = function() {
+  // Validate lowercase letters
+  var lowerCaseLetters = /[a-z]/g;
+  if(myInput.value.match(lowerCaseLetters)) {  
+    letter.classList.remove("invalid");
+    letter.classList.add("valid");
+  } else {
+    letter.classList.remove("valid");
+    letter.classList.add("invalid");
+  }
+  
+  // Validate capital letters
+  var upperCaseLetters = /[A-Z]/g;
+  if(myInput.value.match(upperCaseLetters)) {  
+    capital.classList.remove("invalid");
+    capital.classList.add("valid");
+  } else {
+    capital.classList.remove("valid");
+    capital.classList.add("invalid");
+  }
+
+  // Validate numbers
+  var numbers = /[0-9]/g;
+  if(myInput.value.match(numbers)) {  
+    number.classList.remove("invalid");
+    number.classList.add("valid");
+  } else {
+    number.classList.remove("valid");
+    number.classList.add("invalid");
+  }
+  
+  // Validate length
+  if(myInput.value.length >= 8) {
+    length.classList.remove("invalid");
+    length.classList.add("valid");
+  } else {
+    length.classList.remove("valid");
+    length.classList.add("invalid");
+  }
+}
+</script>
+
+</body>
+</html>
+
+
+function validate(email) {
+
+            var reg = /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/;
+            //var address = document.getElementById[email].value;
+            if (reg.test(email) == false) 
+            {
+                alert('Invalid Email Address');
+                return (false);
+            }
+ }

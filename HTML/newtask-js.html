@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>javascript form validation</title>
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link rel="stylesheet" type="text/css" href="../CSS/bootstrap.css">
+</head>
+<body>
+<h2 class="text-center">Please Fill in this Form:</h2>
+<form action="javascript:void(0)" onsubmit=" validation();">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 col-md-offset-3">
+        <div class="col-md-12">
+          <div class="form-group">
+           <label for="email"><b>Email</b></label>
+           <input type="text" name="email" id="email" class="form-control" >
+          </div>
+        </div>
+        <div class="col-md-12">
+          <div class="form-group">
+           <label for="password"><b>Password</b></label>
+           <input type="password" id="password" class="form-control" >
+          </div>
+        </div>
+        <div class="col-md-12">
+          <div class="form-group">
+           <label for="First Name"><b>First Name</b></label>
+           <input type="text" id="FirstName" class="form-control" >
+          </div>
+        </div>
+        <div class="col-md-12">
+          <div class="form-group">
+           <label for="Last Name"><b>Last Name</b></label>
+           <input type="text" id="LastName" class="form-control" >
+          </div>
+        </div>
+        <div class="col-md-12">
+          <div class="form-group">
+           <label for="Address"><b>Address</b></label>
+           <textarea name="Address" id="Address" cols="30" rows="4" class="form-control"></textarea>
+          </div>
+        </div>
+        <div class="col-md-12">
+          <div class="form-group">
+           <label for="countries"><b>countries</b></label>
+            <select class="form-control" id="countries">
+              <option>Africa</option>
+              <option>Asia</option>
+              <option>India</option>
+            </select>
+          </div>
+        </div> 
+        <div class="col-md-12">
+          <div class="form-group">
+           <label for="state"><b>State</b></label>
+            <select class="form-control" id="state">
+              <option>Andra Pradesh</option>
+              <option>Assam</option>
+              <option>Bihar</option>
+              <option>Goa</option>
+              <option>Gujarat</option>
+            </select>
+          </div>
+        </div>
+        <div class="col-md-12">
+          <div class="form-group">
+           <label for="city"><b>city </b></label>
+            <select class="form-control" id="city">
+              <option>Chennai</option>
+              <option>Bangalore</option>
+              <option>Hyderabad</option>
+            </select>
+          </div>
+        </div>
+        <div class="col-md-12">
+          <div class="form-group">
+           <label for="pincode"><b>pincode</b></label>
+           <input type="text" id="pincode" class="form-control" >
+          </div>
+        </div>
+        <div class="col-md-12">
+          <div class="form-group">
+           <label for="age"><b>Age</b></label>
+           <input type="text" id="age" class="form-control" >
+          </div>
+        </div>
+        <div class="col-md-12">
+          <div class="form-group">
+           <label for="gender"><b>Gender</b></label>
+           <input name="option" id="male" type="radio" value="Male" /> Male
+           <input name="option" id="female" type="radio" value="Female"  /> Female
+          </div>
+        </div>
+        <div class="col-md-12">
+          <div class="form-group">
+           <label for="file"><b>profile photo</b></label>
+           <input type="file" id="fileUpload" name="">
+          </div>
+        </div>
+        <div class="col-md-12">
+          <input type="submit" value="submit" class="btn btn-default">
+        </div>
+      </div>
+    </div> 
+  </div>
+</form>
+<script type="text/javascript">
+  function validation(){
+    var email = document.getElementById("email").value;
+    console.log(email)
+    var str = document.getElementById("password").value;
+    var FirstName = document.getElementById("FirstName").value;
+    var LastName = document.getElementById("LastName").value;
+    var Address = document.getElementById("Address").value;
+    var countries = document.getElementById("countries").value;
+    console.log(countries)
+    var state = document.getElementById("state").value;
+    var city = document.getElementById("city").value;
+    console.log()
+    var reg = /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/;
+    var regularExpression  = /^[a-zA-Z]$/;
+    var pincode = document.getElementById("pincode").value;
+    console.log(pincode)
+    var age = document.getElementById("age").value;
+    var z1 = /^[0-9]*$/;
+    var male = document.getElementById("male");
+    var female = document.getElementById("female");
+    var gender = document.querySelector('input[name=option]:checked').value
+    console.log(female)
+    var oFile = document.getElementById("fileUpload").files[0]
+    var ofile = document.getElementById("fileUpload").value;
+    bannerImage = document.getElementById('fileUpload').value;
+    console.log(bannerImage)
+    imgData = bannerImage;
+    localStorage.setItem("imgData", bannerImage);
+    console.log(ofile)
+    if (reg.test(email) == false) {
+      alert('Invalid Email Address');
+      return (false);
+    }
+     if (str.length < 8) {
+        alert("Plz enter minimum 8 character ");
+        return ("too_short");
+    } else if (str.length > 15) {
+        alert("plz only 15 character is used");
+        return ("too_long");
+    } else if (str.search(/\d/) == -1) {
+        alert("add atleast one number");
+        return ("no_num");
+    } else if (str.search(/[A-Z]/) == -1) {
+        alert("add one capital letter used ");
+        return ("capital");
+    } else if (str.search(/[a-z]/) == -1) {
+        alert("add one small letter used");
+        return ("small");
+    } else if (str.search(/[^a-zA-Z0-9\!\@\#\$\%\^\&\*\(\)\_\+\.\,\;\:]/) != -1) {
+        alert("add atleast one symbol");
+        return ("bad_char");
+    }
+     if (!z1.test(pincode)){
+        alert("Only numbers are allowed");
+        return false;
+    }
+     if (!z1.test(age)){
+        alert("Only numbers should be entered");
+        return false;
+    }
+    if ((male.checked == false) && (female.checked == false)) {
+      alert('You must select male or female');
+      return false;
+    }
+
+    if (oFile.size > 2097152) {
+      alert("File size must under 3mb!");
+      return;
+    }
+
+    localStorage.setItem("useremail", email);
+    localStorage.setItem("password", str);
+    localStorage.setItem("FirstName", FirstName);
+    localStorage.setItem("LastName", LastName);
+    localStorage.setItem("Address", Address);
+    localStorage.setItem("countries", countries);
+    localStorage.setItem("state", state);
+    localStorage.setItem("city", city);
+    localStorage.setItem("pincode", pincode);
+    localStorage.setItem("age", age);
+    localStorage.setItem('a_value',gender);
+    localStorage.setItem('ofile_image', imgData);
+    window.location.href = 'newtask2.html'
+  }
+</script>
+</body>
+</html>
+
+
+
+    

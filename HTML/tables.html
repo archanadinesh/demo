@@ -16,45 +16,44 @@ for(i=1;i<16;i++) {
  
 document.write("</table>");
 </script>
+<body>
+Enter Num: <input id="num">
+<button onclick=""></button>
+<input id="answer">
+</body>
 </html> -->
 
-<!-- <HTML>
-<BODY>
-<script language = "Javascript">
-d = 2;  //Table 2 to 5
-n = 1;
-while(n<=10, d<=5)
-{
-document.write(d+ "x" + n + "=" + d*n + "<BR>")
-n++;
-if (n == 10)
-{
-d++;
-n = 0;
-document.write(d+ "x" + n + "=" + d*n + "<BR>")
+
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>times table</title>
+<script type="text/javascript">
+function maketable(){
+	var num1 = document.getElementById('start').value;
+	var num2 = document.getElementById('stop').value;
+	var bb = 1;
+	var stringtext = '';
+	for(bb;bb<=num2;bb++){
+		var pdt = num1 * bb;
+		stringtext += num1 +'  x  ' + bb + '  =  ' + pdt + '<br/>';
+	}
+	document .getElementById('result').innerHTML = stringtext;
 }
-}
-</SCRIPT>
-</BODY>
-</HTML> -->
+</script>
+</head>
+<body>
+<center>
+	<input type="text" id="start" />
+	<input type="text" id="stop" />
+	<button onclick="maketable();">click button</button>
+	<div id="result"></div>
+</center>
+
+</body>
+</html>
 
 
- <!DOCTYPE>
-    <html>
-    <head>
-        <title>Table</title>
-    </head>
-    <body>
-    <script language="javascript" type="text/javascript">
-        for (var a=0; a < 10; a++) {
-            document.write("<tr>");
-            for(var b=0; b<10; b++) {
-                document.write("<td>"a*b"</td>");
-        }
-        document.write("</tr>");
-        }
-    </script>
-    </body>
-    </html>
 
-  
+
