@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Mini Project</title>
+    <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+  </head>
+<style type="text/css">
+  body{
+    width: 100%;
+    background-color: #eff6ff;
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Nunito', sans-serif;
+  }
+
+  h2, h3 {
+    color: #4c6280;
+    font-weight: 200;
+
+  }
+  
+  /*.bg {
+    background-position-y: bottom;
+    background-repeat-y: no-repeat;
+    background-repeat: repeat-x;
+    background-size: contain;
+    background-image: url(../IMAGE/img_bg_wave.png);
+  }*/
+  
+  .sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  .sidenav a:hover {
+    color: #f1f1f1;
+  }
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  @media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+  }
+ 
+
+.icon-bar{
+  position: fixed;
+  right: 0;
+  top: 30%;
+  font-size: 20px;
+  margin-right: 13px;
+}
+
+.icon-bar a{
+  display: block;
+  margin-bottom: 30px;
+  color: #4c6280;
+  margin-right: 10px;
+  margin-top: 15px;
+ }
+ 
+
+.facebook {
+  color: white;
+}
+
+.fa {
+  padding: 4px;
+  margin-left: 75px;
+}
+#facebookText,
+#twitterText,
+#googleText,
+#linkedinText {
+  display: none;
+  position: absolute;
+  padding-right: 6px;
+  font-size: 12px;
+  color: #ff5c72;
+  line-height: 28px;
+   
+
+}
+.icon-bar .fa-facebook:hover #facebookText {
+  display: block;
+}
+
+.fa-twitter:hover ~ #twitterText {
+  display: block;
+}
+
+.fa-google:hover ~ #googleText {
+  display: block;
+}
+
+.fa-linkedin:hover ~ #linkedinText {
+  display: block;
+}
+
+.twitter {
+  color: white;
+}
+
+.google {
+  color: white;
+}
+
+.linkedin {
+  color: white;
+}
+
+.youtube {
+  color: white;
+}
+
+.more-information{
+  position: absolute;
+  margin-left: 15px;
+  color: darkcyan;
+}
+
+.nav-header{
+  padding-left: 40px;
+  padding-top: 40px;
+  color: #fff;
+  position: relative;
+  font-size: 15px;
+}
+.inner-wrapper{
+  width: 58%;
+  margin: auto;
+  margin-top: 4%;
+}
+.inner-wrapper h1{
+  color: #fff;
+  position: relative;
+  text-align: center;
+  font-size: 60px;
+}
+.icons{
+  color:coral;
+}
+.sub{
+  margin-left: 11px;
+  font-size: 18px;
+  vertical-align: bottom;
+  color: #eee;
+}
+img {
+  margin-top: -115px;
+  padding-top: -60px;
+  margin-left: 300px;
+  }
+.inner-wrapper h5{
+  font-size: 14px;
+  margin-left: 290px;
+  margin-top: 45px;
+}
+.inner-wrapper p{
+  margin-left: 55px;
+  font-size: 14px;
+}
+.btn{
+  border: 1px solid black;
+  margin-top: 30px;
+  background: aliceblue;
+  font-size: 20px;
+}
+
+.logo{
+  text-align: center;
+}
+
+.it-text{
+  font-size: 40px;
+  text-align: center;
+  line-height: 70px;
+  font-weight: 300;
+}
+.it-sub-text {
+  text-transform: capitalize;
+  font-size: 18px;
+  text-align: center;
+  line-height: 35px;
+  font-weight: 300;
+}
+
+.svg-element {
+  fill: #ff5c72;
+  fill-rule: evenodd;
+}
+
+.btn-more-info{
+  background-color: transparent;
+  border: 1px solid #ceddf2;
+  color: #7d93b2;
+  border-radius: 8px;
+  font-size: 16px;
+  line-height: 16px;
+  padding: 15px 32px;
+  text-align: center;
+  display: inline-block;
+  text-decoration: none;
+  margin-right: 30px;
+  transition: all .3s;
+  height: auto;
+  cursor: pointer;
+}
+</style>
+  <body>
+    <div class="container-fluid">
+      <div class="bg">
+        <div class="nav-header">
+          <span class="icons"onclick="openNav()">&#9776;</span>
+        </div>
+        <div class="inner-wrapper">
+          <div class="logo">
+            <svg class="menu__logo-img" xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48">
+              <path data-name="Sigma symbol" class="svg-element" d="M237.418,8583.56a12.688,12.688,0,0,0,.419-3.37c-0.036-5.24-2.691-9.68-7.024-13.2h-3.878a20.819,20.819,0,0,1,4.478,13.01c0,4.56-2.456,10.2-6.413,11.4a16.779,16.779,0,0,1-2.236.51c-10.005,1.55-14.109-17.54-9.489-23.31,2.569-3.21,6.206-4.08,11.525-4.08h17.935A24.22,24.22,0,0,1,237.418,8583.56Zm-12.145-24.45c-8.571.02-12.338,0.98-16.061,4.84-6.267,6.49-6.462,20.69,4.754,27.72a24.092,24.092,0,1,1,27.3-32.57h-16v0.01Z" transform="translate(-195 -8544)"></path>
+            </svg>
+          </div>
+          <h2 class="it-text">Itbeezone — Creative App Showcase HTML Template</h2>
+          <h3 class="it-sub-text"> Itbeezone is a beautiful HTML Template for selling or presenting your Mobile, Web or Desktop App. You can easily change the colors, images and text to make it ready for you!</h3>
+          <p class="text-center"><button class="btn btn-more-info">MORE INFO</button></p> 
+        </div>
+        <div class="icon-bar">
+          <a href="#">
+            <span id="facebookText">Facebook <span class="sub">-</span> </span>
+            <span onmouseover="fbmousover(this);" onmouseout="fbmousout(this)"><i class="fa fa-facebook" ></i></span>
+          </a>
+          <a href="#">
+            <span id="twitterText"><p>Twitter <span class="sub">-</span></p></span>
+            <span onmouseover="twmousover(this)" onmouseout="twmousout(this)"><i class="fa fa-twitter" ></i></span>
+          </a> 
+           <a href="#">
+            <span id="googleText"><p>Google <span class="sub">-</span></p></span>
+            <span onmouseover="glmousover(this)" onmouseout="glmousout(this)"><i class="fa fa-google" ></i></span>
+          </a> 
+           <a href="#">
+            <span id="linkedinText"><p>Linkedin <span class="sub">-</span></p></span>
+            <span onmouseover="limousover(this)" onmouseout="limousout(this)"><i class="fa fa-linkedin" ></i></span>
+          </a> 
+        </div>
+      </div>
+    </div>
+        <div id="mySidenav" class="sidenav">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+          <input type="button" onclick="chBackcolor();">
+        </div>
+<script>
+function openNav() {
+   document.getElementById("mySidenav").style.width = "1310px";
+}
+
+function closeNav() {
+   document.getElementById("mySidenav").style.width = "0";
+}
+function chBackcolor(color) {
+   document.body.style.backgroundColor = '#CCFFFF';
+   document.getElementById("MyHeader").style.backgroundColor='#FFCCFF'
+}
+
+function fbmousover(){
+  var welcome = document.getElementById('facebookText');
+  welcome.style.display = 'block';
+}
+
+function fbmousout(){
+  var welcome = document.getElementById('facebookText');
+  welcome.style.display = 'none';
+}
+function twmousover(){
+  var welcome = document.getElementById('twitterText');
+  welcome.style.display = 'block';
+}
+
+function twmousout(){
+  var welcome = document.getElementById('twitterText');
+  welcome.style.display = 'none';
+}
+function glmousover(){
+  var welcome = document.getElementById('googleText');
+  welcome.style.display = 'block';
+}
+
+function glmousout(){
+  var welcome = document.getElementById('googleText');
+  welcome.style.display = 'none';
+}
+function limousover(){
+  var welcome = document.getElementById('linkedinText');
+  welcome.style.display = 'block';
+}
+
+function limousout(){
+  var welcome = document.getElementById('linkedinText');
+  welcome.style.display = 'none';
+}
+</script>
+</body>
+</html>
+
+

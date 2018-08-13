@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+header.smaller {
+  height: 75px;
+}
+
+header.smaller h1#logo {
+  width: 150px;
+  height: 75px;
+  line-height: 55px;
+  font-size: 55px;
+  margin: 0;
+}
+
+header.smaller nav a {
+  line-height: 75px;
+}
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  color: #505050;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1;
+  font-weight: 100;
+  color: #77C7AC;
+}
+
+a {
+  text-decoration: none;
+  color: #fcfcfc;
+  font-weight: 300;
+}
+
+a:hover {
+  color: #3c3c3c;
+}
+
+#wrapper {
+  width: 100%;
+  margin: 0 auto;
+}
+
+#main {
+  background-color: #fff;
+  padding-top: 150px;
+  min-height:500px;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+  padding: 0 30px;
+}
+
+section {
+  padding: 60px 0;
+}
+
+section h1 {
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+section p {
+  margin-bottom: 30px;
+}
+
+section p:last-child {
+  margin-bottom: 0;
+}
+
+section.color {
+  background-color: #f4f4f4;
+}
+
+header {
+  width: 100%;
+  height: 10em;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  border-bottom:solid 0.5em #f4f4f4;
+  background-color: #394e63;
+  transition: height 0.3s;
+}
+
+header h1#logo {
+  display: inline-block;
+  line-height:3em;
+   margin: 0;
+   padding:0 1em;
+   background-color:#394e63;
+  float: left;
+  font-family: "Open Sans", sans-serif;
+  font-size: 60px;
+  color: #fcfcfc;
+  text-shadow: 0.1em 0.03em #C0392B;
+  font-weight: 400;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+header nav {
+  display: inline-block;
+  float: right;
+}
+
+header nav a {
+  line-height: 150px;
+  margin-left: 20px;
+  color: #fcfcfc;
+  font-weight: 300;
+  font-size: 1em;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+header nav a:hover {
+  color: #fd5559;
+}
+
+header.smaller {
+  height: 75px;
+}
+
+header.smaller h1#logo {
+  line-height: 75px;
+  font-size: 30px;
+  background: red;
+}
+
+header.smaller nav a {
+  line-height: 75px;
+  color: red;
+}
+
+
+/*.clearfix:after {
+  visibility: hidden;
+  display: block;
+  content: "";
+  clear: both;
+  height: 0;
+}*/
+
+
+</style>
+</head>
+<body>
+<div id="wrapper">
+  <header id="js-header">
+     <div class="container clearfix">
+        <h1 id="logo">
+          <img src="../IMAGE/icons8-eye.png">
+        </h1>
+         <nav>
+             <a href="#bacon">HOME</a>
+             <a href="#sausage">SERVICE</a>
+             <a href="#biltong">CONTACT</a>
+          </nav>
+      </div>
+  </header>
+  <div id="main">
+      <div id="content">
+          <section>
+              <div class="container">
+                  <h1>LONDEN</h1>
+                  <p>Aww, it's true. I've been hiding it for so long. Perhaps, but perhaps your civilization is merely the sewer of an even greater society above you! You guys go on without me! I'm going to go… look for more stuff to steal! When I was first asked to make a film about my nephew, Hubert Farnsworth, I thought "Why should I?" Then later, Leela made the film.</p>
+                  <p>Bacon atball corned beef strip steak andouille.</p>
+              </div>
+          </section>
+          <section class="color">
+              <div class="container">
+                  <h1>MUMBAI</h1>
+                  <p>Bender, you risked your life to save me! Good news, everyone! I've taught the toaster to feel love! I can explain. It's very valuable. Can we have Bender Burgers again?</p>
+                   <p>Bacon ipsum dolor sit amet pig biltong filet mignon, kiel</p>
+              </div>
+          </section>
+</div>
+<script>
+function resizeHeaderOnScroll() {
+   const distanceY = window.pageYOffset || document.documentElement.scrollTop,
+   shrinkOn = 20,
+  headerEl = document.getElementById('js-header');
+  
+  if (distanceY > shrinkOn) {
+    headerEl.classList.add("smaller");
+  } else {
+    headerEl.classList.remove("smaller");
+  }
+}
+
+window.addEventListener('scroll', resizeHeaderOnScroll);
+</script>
+
+</body>
+</html>
+
+
+
+     
+

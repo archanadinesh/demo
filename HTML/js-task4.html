@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <meta name="viewport" content="width=device-width, initial-scale=1"> 
+<style>
+body {
+    height:1000px;
+    width:100%;
+    background-color:#F0F0F0;
+}
+
+#header_nav {
+    width:100%;
+    height:100px;
+    background-color:#666;
+    position:fixed;
+    top:0;
+    left:0;
+}
+</style>
+</head>
+<body>
+<div id="header_nav">nav here
+  <h1 id="logo">
+    <img src="../IMAGE/icons8-eye.png">
+  </h1>
+         <nav>
+             <a href="#bacon">HOME</a>
+             <a href="#sausage">CONTENT</a>
+             <a href="#biltong">SETTINGS</a>
+          </nav>
+</div>
+<script>
+// function(){
+//     ('#header_nav').data('size','big');
+// };
+
+// (window).scroll(function(){
+//     if((document).scrollTop() > 0)
+//     {
+//         if(('#header_nav').data('size') == 'big')
+//         {
+//             ('#header_nav').data('size','small');
+//             ('#header_nav').stop().animate({
+//                 height:'40px'
+//             },600);
+//         }
+//     }
+//     else
+//     {
+//         if(('#header_nav').data('size') == 'small')
+//         {
+//             ('#header_nav').data('size','big');
+//             ('#header_nav').stop().animate({
+//                 height:'100px'
+//             },600);
+//         }  
+//     }
+
+$(document).ready(function(){
+    
+    // fill body with data so we can see the scroll
+    for(var i=0; i<1000; i++)
+    {        
+        $('#list').append(i+'<br>');
+    }
+    // jQuery plug-in
+    $(window).scroll(function(){
+    console.log($(window).scrollTop());
+    if($(window).scrollTop() > 800 && $(window).scrollTop() < 850)
+    {
+      alert('mission accomplished');
+    }
+    });
+});
+
+    
+</script>
+</body>
+</html>
+
+
+
+
