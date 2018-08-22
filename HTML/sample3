@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>new project HTML test file</title>
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i" rel="stylesheet">
+  </head>
+<style type="text/css">
+  body{
+    width: 100%;
+    background-color: white;
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Lato', sans-serif;
+  }
+  p, h1,h2,h3,h5,h6 {
+    margin: 0px;
+  }
+.header {
+    /*width: 100%;*/
+    height: 35px;
+    background-color: #333333;
+    color:#fff;
+    border: 1px solid black;
+  }
+  .header p{
+    margin: 10px 0px 13px;
+  }
+  .left {
+    width: 44%;
+    padding-left: 55px;
+    font-size: 12px;
+    float: left;
+  }
+.right {
+    display: inline-block;
+    width: 44%;
+    height: 0px;
+    color:white;
+    background: #333333;
+    padding: 0px 22px 0px 0px;
+    text-align: right;
+    font-size:12px;
+    margin-top: -2px;
+    position: absolute;
+  }
+  .header1{
+    /*width: 100%;*/
+    height: 80px;
+    background-color: white;
+    border: 1px solid black;
+  }
+  .left-head1 {
+    width: 50%;
+    padding-left: 30px;
+    font-size: 15px;
+    float: left;
+  }
+.left-head1 p {
+    margin: 0px 0px;
+    padding-top: 20px;
+    font-size: 30px;
+    padding-left: 100px;
+  }
+.left-head1 p span{
+  color: #1891EC;
+}
+.right-head1 ul li {
+    display: inline-block;
+    width: 5%;
+    height: 0px;
+    color:black;
+    padding: 30px 18px 18px 15px;
+    text-align: center;
+  }
+.right-head1 ul{
+    margin: 0px;
+    padding: 0px;
+  }
+  .right-head1 ul .active{
+    color: #1891EC;
+  }
+  .bg {
+    /* The image used */
+    background-image: url("../IMAGE/laptop.jpg");
+
+    /* Full height */
+    height: 500px; 
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.bg p{
+  margin: 0px;
+  margin-left: 15%;
+  font-size: 81px;
+  padding-top: 270px;
+  color:white;
+
+}
+.bg small{
+   margin: 0px;
+  margin-left: 15%;
+  font-size: 30px;
+  color:white;
+}
+.navigation{
+    /*width: 100%;*/
+    height: 180px;
+    background: #0bcce4;
+  }
+  .nav-left {
+    width: 70%;
+    font-size: 20px;
+    margin-left:0px;
+    float: left;
+    margin-top: 50px;
+  }
+  .nav-left p{
+    font-size:35px; 
+    margin-left: 100px;
+    margin-bottom: 10px;
+  }
+  .nav-left small{
+    margin-left: 100px;
+    margin-bottom: 10px;
+  }
+
+   .nav-right {
+    width: 25%;
+    font-size: 25px;
+    float: left;
+    margin-left: 65px;
+    margin-top: 65px;
+  
+  }
+  .nav-right button{
+    padding: 20px 15px 15px 15px;
+    background: #0bcce4;
+    border: 1px solid blue;
+  }
+  .content {
+  margin-top: 50px;
+  margin-left: 95px;
+  margin-bottom: 123px;
+}
+.content p{
+  text-align: center;
+  font-size: 30px;
+  margin-bottom: 10px;
+  padding-right: 123px;
+}
+.content span{
+   margin-left: 37%;
+}
+.col-rd-3{
+    width: 33%;
+    height: 164px;
+    display: inline-block;
+    margin-bottom: 120px;
+    background: #ded8d8;
+  }
+  .col-rd-3 p{
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 20px;
+  }
+  .col-rd-2{
+    width: 33%;
+    height: 164px;
+    display: inline-block;
+    margin-bottom: 20px;
+    background: #ded8d8;
+  }
+  .col-rd-2 p{
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 20px;
+  }
+  .content1 {
+  margin-top: 50px;
+  margin-left: 95px;
+  margin-bottom: 10px;
+}
+.content1 p{
+  text-align: center;
+  font-size: 30px;
+  margin-bottom: 10px;
+  padding-right: 123px;
+}
+.content1 span{
+   margin-left: 30%;
+ }
+ .footer{
+    /*width: 100%;*/
+    height: 450px;
+  }
+  .footer-left {
+    width: 50%;
+    font-size: 15px;
+    margin-left:0px;
+    float: left;
+    margin-top: 50px;
+  }
+  .footer-left p{ 
+    margin-left: 100px;
+    margin-bottom: 10px;
+    padding-top: 25px;
+    margin-top: 10px;
+  }
+  .footer-left small{
+    margin-left: 100px;
+    margin-bottom: 10px;
+  }
+
+   .footer-right {
+    width: 45%;
+    float: left;
+    margin-left: 65px;
+    margin-top: 65px;
+   }
+   .footer-right img{
+    width: 100%;
+   }
+   .footer-left ul{
+    margin-left: 125px;
+   }
+   .footer-left ul li{
+    line-height: 30px;
+   }
+   .footer-left button{
+    margin-left: 132px;
+    background-color: #0bcce4;
+    height: 40px;
+  }
+  .footer1{
+    /*width: 100%;*/
+    height: 465px;
+  }
+  .footer1-right{
+    width: 48%;
+    font-size: 15px;
+    margin-left: 1px;
+    float: left;
+    margin-top: 80px;
+    background: #ddd;
+    padding-left: 90px;
+  }
+  .footer1-right .p1{ 
+    margin-left: 2px;
+    margin-bottom: 22px;
+    padding-top: 25px;
+    margin-top: 56px;
+    font-size: 30px;
+  }
+  .footer1-right .p2{
+    font-size: 20px;
+    line-height: 31px;
+  }
+ .footer1-left {
+    width: 45%;
+    float: left;
+    margin-top: 65px;
+   }
+   .footer1-left img{
+    width: 100%;
+   }
+   .footer1-right ul{
+    margin-left: 125px;
+   }
+   .footer1-right ul li{
+    line-height: 30px;
+   }
+   .footer1-right button{
+    margin-left: 37px;
+    background-color: #0bcce4;
+    height: 50px;
+  }
+  .footer1-right small{
+    margin-top: 15px;
+  }
+  .col-rd-1{
+    width: 31%;
+    height: 300px;
+    float: left;
+    margin-left: 23px;
+  }
+  .col-rd-1 p{
+    font-size: 15px;
+    margin-bottom: 20px;
+  }
+   .col-rd-1 .p1{
+    font-size: 30px;
+   } 
+  .col-rd-1 text-center .p1{
+    font-size: 30px;
+    line-height: 10px;
+  }
+  .col-rd-1-row{
+    margin-top: 90px;
+    height: 345px;
+  }
+  .col-rd-1 ul{
+    margin: 0px;
+    padding: 0px;
+  }
+
+  .col-rd-1 ul li {
+    list-style-type: none;
+    padding: 15px;
+    border: 1px solid #ddd;
+    margin-bottom: 6px;
+  }
+  .co-fl{
+    float: left;
+    width: 30%;
+    height: 200px;
+  }
+.row-box{
+    width: 100%;
+    margin-top: 28px;
+    height: 316px;
+    color: #fff;
+    padding-top: 61px;
+    background: #282a2c;
+  }
+.col-md-3{
+    width: 24%;
+    height: 164px;
+    float: left;
+    margin-left: 13px;
+  }
+.col-md-3 a {
+    float: right;
+    color:red;
+  }
+  .container {
+    display: flex;
+  }
+.row-box img {
+  margin: 6px;
+  width: 30px;
+  height: 30px;
+  }
+.container span{
+    padding-top: 11px;
+    font-size: 20px;
+  }
+  .col-md-3 ul li{
+    list-style-type: none;
+
+  }
+  .container{
+    line-height: 10px;
+
+  }
+  .col-md-3 p{
+    margin: 0px;
+    margin-top: 20px;
+
+  }
+  .sub-footer {
+    text-shadow: none;
+    color: #f5f5f5;
+    padding: 0;
+    padding-top: 50px;
+    background: #232527;
+  }
+  .sub-footer .right{
+  float:right;
+  padding-right: 40px;
+  }
+.sub-footer span{
+  padding-left: 70px;
+  }
+
+  Achu!111
+  Password123
+
+Help us secure your GitHub account by verifying your email address (archana13eee@gmail.com). This lets you access all of GitHub’s features.
+
+
+  
+  </style>
+  <body>
+    <div class="header">
+      <p><span class="left">Mon-Sat8.00-18.00.Sunday CLOSED</span>
+         <span class="right">Tel No.(+001)123-456-789</span>
+       </p>
+    </div>
+     <div class="header1">
+      <div class="left-head1">
+        <p>I<span>B</span>Z</p>
+      </div> 
+      <div class="right-head1">
+        <ul>
+          <li class="active">HOME</li>
+          <li>ABOUT</li>
+          <li>SERVICES</li>
+          <li>PORTFOLIO</li>
+          <li>CONTACT</li>
+        </ul> 
+      </div>
+    </div>
+    <div class="bg">
+      <p>INNOVATION</p>
+      <small>We Create The Opportunities</small>
+    </div>
+    <div class="navigation">
+      <div class="nav-left">
+        <p>Partner with Business Leaders</p>
+        <small>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores quae porro consequatur aliquam</small></div>
+      <div class="nav-right"> 
+        <button class="btn read-more-btn">Read More</button> 
+      </div> 
+    </div> 
+    <div class="content">
+      <p>OUR SERVICES</p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores quae porro consequatur aliquam, incidunt eius magni provident, doloribus omnis minus ovident
+      <span>temporibus perferendis nesciunt</span>
+    </div>  
+    <div class="col-rd-3">
+      <p>Consulting</p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores quae porro consequatur aliquam
+        </div>
+        <div class="col-rd-3 text-center">
+          <p>Strategy</p>
+           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores quae porro consequatur aliquam
+        </div>
+        <div class="col-rd-3 text-right">
+          <p>Analysis</p>
+           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores quae porro consequatur aliquam
+        </div>
+         <div class="col-rd-2">
+      <p>Investment</p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores quae porro consequatur aliquam
+        </div>
+        <div class="col-rd-2 text-center">
+          <p>Creative</p>
+           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores quae porro consequatur aliquam
+        </div>
+        <div class="col-rd-2 text-right">
+          <p>24/7 Support</p>
+           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores quae porro consequatur aliquam
+        </div>
+        <div class="content1">
+           <p>OUR ORGANIZATION</p>Curabitur aliquet quam id dui posuere blandit. Donec sollicitudin molestie malesuada Pellentesque ipsum id orci porta dapibus. 
+           <span> Vivamus suscipit tortor eget felis porttitor volutpat.</span>
+        </div> 
+    <div class="footer">
+      <div class="footer-left">
+        <p>Grids is a responsive Multipurpose Template. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur aliquet quam id dui posuere blandit. Donec sollicitudin molestie malesuada. Pellentesque in ipsum id orci porta dapibus. Vivamus suscipit tortor eget felis porttitor volutpat.</p>
+        <ul>
+          <li> Lorem ipsum dolor sit amet</li>
+          <li> consectetur adipiscing elit</li>
+          <li>Curabitur aliquet quam id dui</li>
+          <li> Donec sollicitudin molestie malesuada.</li>
+        </ul>
+         <button class="btn read-more-btn">Learn More</button>  
+        </div>
+      <div class="footer-right">
+         <img src="../IMAGE/about.png">
+      </div> 
+    </div> 
+    <div class="footer1">
+      <div class="footer1-left">
+        <img src="../IMAGE/service1.jpg">
+      </div>
+        <div class="footer1-right">
+        <p class="p1">Our Team</p>
+        <p class="p2"> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis eu libero scelerisque ligula sagittis faucibus eget quis lacus.Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      <button class="btn read-more-btn">Our Portfolio</button> 
+    </div>
+  </div>
+  <div class="col-rd-1-row">
+     <div class="col-rd-1">
+      <p class="p1">Programs</p>
+      <p>Sed ut perspiciaatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur.</p> 
+
+      <p>Sed ut perspiciaatis iste natus error sit voluptatem probably haven't heard of them accusamus.</p>
+    </div>
+    <div class="col-rd-1 text-center">
+      <p class="p1">Latest News</p>
+         <ul>
+        <li> Accordion Heading Text Item # 1</li>
+        <li> Accordion Heading Text Item # 2</li>
+        <li> Accordion Heading Text Item # 3</li>
+        <li> Accordion Heading Text Item # 4</li>
+      </ul>
+    </div>
+    <div class="col-rd-1 text-right">
+      <p class="p1">Testimonials</p>
+       <p>Lorem ipsum dolor met consectetur adipisicing. Aorem psum dolor met consectetur adipisicing sit amet, consectetur adipisicing elit, of them jean shorts sed magna aliqua. Lorem ipsum dolor met.</p>
+       <p>Marc Cooper</p>
+       <p>Technical Directo</p>
+    </div>
+     
+   </div>
+
+
+   <div class="row-box">
+    <div class="col-md-3">
+      <div class="container">
+        <span>Our Contact</span>
+      </div>
+      <p>Bootstrap company Inc
+       JC Main Road, Near Silnile tower
+       Pin-21542 NewYork US.</p> 
+
+       <p>(123) 456-789 - 1255-12584 
+       email@domainname.com</p>
+    </div>
+    <div class="col-md-3">
+      <div class="container">
+        <span>Quick Links</span>
+      </div>
+        <ul>
+         <li>Latest Events</li>
+         <li>Terms and conditions</li>
+         <li>Privacy policy</li>
+         <li>Career</li>
+         <li>Contact us</li>
+       </ul>
+    </div>
+    <div class="col-md-3">
+      <div class="container">
+        <span>Latest posts</span>
+      </div>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+
+       <p>Pellentesque et pulvinar enim. Quisque at tempor ligula</p>
+
+        <p>Natus error sit voluptatem accusantium doloremque</p>
+    </div>
+    <div class="col-md-3">
+      <div class="container">
+        <span>Recent News</span>
+      </div>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+
+       <p>Pellentesque et pulvinar enim. Quisque at tempor ligula</p>
+
+        <p>Natus error sit voluptatem accusantium doloremque</p>
+    </div> 
+  </div>
+</div>
+ <div class="sub-footer"><span>Bootstrap Template 2018 All right reserved. Template By WebThemez</span>
+  <span class="right">OS Template</span></div>
+
+
+  
+</body>
+</html>
+  
+
+
+
+
+        
