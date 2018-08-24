@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Mini1Project</title>
+    <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+  </head>
+<style type="text/css">
+body{
+  width: 100%;
+  background-color: #eff6ff;
+  padding: 0px;
+  margin: 0px;
+  font-family: 'Nunito', sans-serif;
+}
+.icons{
+  color: black;
+  margin-top: 280px;
+  font-size: 35px;
+  margin-left: 30px;
+  width: 60px;
+  height: 60px;
+  background: #fff;
+  padding-left: 13px;
+  padding-top: 6px;
+  box-sizing: inherit;
+  box-shadow: 0 0 35px rgba(0, 0, 0, 0.08);
+}
+.cus-col-md-1 {
+  background: #fff;
+  height: 100vh;
+  width: 6%;
+  min-height: 600px;
+  box-shadow: 0 0 35px rgba(0, 0, 0, 0.08);
+}
+.cus-col-md-11 {
+  width: 94%;
+}
+.content1 {
+  margin-top: 50px;
+  margin-left: 95px;
+  margin-bottom: 10px;
+}
+.content1 p{
+  text-align: center;
+  font-size: 30px;
+  margin-bottom: 10px;
+  padding-right: 123px;
+}
+.content1 span{
+  text-align: center;
+  margin-left: 315px;
+}
+.grid{
+  float: left;
+  margin-top: 60px;
+  margin-left: 50px;
+}
+.grid .sub-box .grid-box .grid-title {
+  color: #fff;
+}
+.grid .sub-box .grid-box .grid-title {
+  font-size: 24px;
+  font-weight: 700;
+  padding: 10px 0 20px 0;
+  margin: 0px;
+  color: #3c9a09;
+}
+.grid-box{
+  font-size: 24px;
+  font-weight: 700;
+  padding: 10px 0 20px 0;
+  margin: 0px;
+  color: #fff;
+}
+.grid-title {
+  font-size: 16px;
+  font-weight: 500;
+  margin-top: 0px;
+  margin-bottom: 10px;
+}
+.grid1 .grid-box {
+  margin-right: 20px;
+  margin-bottom: 0px;
+  padding: 17px;
+  text-align: left;
+  width: 22.5%;
+  height: 400px;
+  display: inline-block;
+  transition: all .3s ease-out;
+}
+.grid-box:hover {
+  -webkit-transform: translate(0, -10px);
+}
+.grid1 .grid-text {
+  text-align: left;
+}
+.grid-text {
+  padding-bottom: 20px;
+  line-height: 30px;
+  font-size: 16px;
+  font-weight: 300;
+}
+.grid1 .grid-icon {
+  float: center;
+}
+
+.grid1 .grid-box {
+  background-color: #fff;
+  color: black;
+  box-shadow: 0 0 20px 0px rgba(0,0,0,0.05);
+  border-radius: 15px;
+}
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+}
+.grid-icon img {
+  vertical-align: middle;
+  border-style: none;
+  width: 45%;
+  float: right;
+}
+.text-center{
+  float: left;
+  font-size: 15px;
+  margin-top: 30px;
+}
+.btn{
+  color: black;
+  box-shadow: 0 0 20px 0px rgba(0,0,0,0.05);
+  border-radius: 15px;
+  background-color: ivory;
+}
+</style>
+<body>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-1 cus-col-md-1">
+        <div class="icons"onclick="openNav()">&#9776; </div>
+      </div>
+      <div class="col-md-11 cus-col-md-11">
+        <div class="content1">
+         <p>SERVICES</p>
+         <span>WE OFFER EXCEPTIONAL SERVICE WITH COMPLIMENTARY HUGS.</span>
+        </div> 
+        <div class="sub-box">
+          <div class="grid grid1">
+           <div class="grid-box grid1">
+            <h3 class="grid-title">WEB DEVELOPMENT</h3>
+            <p class="grid-text">We deliver unparalleled web development solutions to fit each of our customers’ unique business requirements and strategies. Our team of experts utilize new technologies, enhanced frameworks.</p>
+            <p class="text-center"><button class="btn btn-more-info">VIEW MORE</button></p>
+            <div class="grid-icon"><img src="../IMAGE/icon-2.png" class="img-fluid" alt="Service Icon"></div>
+           </div>
+            <div class="grid-box grid1">
+            <h3 class="grid-title"><span>MOB DEVELOPMENT</span></h3>
+            <p class="grid-text">Native apps? Check. Hybrid mobile apps? We do those. Not yet sure what type of app is best for you? No problem. We’re also experts with mobile strategy and design. Whether iOS, Android or HTML5 fits.</p>
+            <p class="text-center"><button class="btn btn-more-info">VIEW MORE</button></p>
+            <div class="grid-icon"><img src="../IMAGE/icon-3.png" class="img-fluid" alt="Service Icon"></div>
+           </div>
+            <div class="grid-box grid1">
+            <h3 class="grid-title"><span>CREATIVE DESIGN</span></h3>
+            <p class="grid-text">More than just colors and fonts, modern creative design involves the creation of intuitive and efficient interfaces that allow the user to accomplish their goals and drive the success of your product.</p>
+            <p class="text-center"><button class="btn btn-more-info">VIEW MORE</button></p> 
+            <div class="grid-icon"><img src="../IMAGE/icon-4.png" class="img-fluid" alt="Service Icon"></div>
+           </div>
+            <div class="grid-box grid1">
+            <h3 class="grid-title"><span>DEPLOYMENT</span></h3>
+            <p class="grid-text">We have vast experience of preparing server and deploy applications in the cloud. We worked different distributions of Linux in Amazon EC2, Linode, Rackspace, Heroku, GoDaddy, Brightbox and Site5..</p>
+            <p class="text-center"><button class="btn btn-more-info">VIEW MORE</button></p>
+            <div class="grid-icon"><img src="../IMAGE/icon-5.png" class="img-fluid" alt="Service Icon"></div>
+           </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+          
+<script>
+function openNav() {
+   document.getElementById("mySidenav").style.width = "98.5%";
+}
+</script>
+</body>
+</html>
+
