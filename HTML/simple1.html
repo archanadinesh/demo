@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>simpleProject</title>
+    <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  </head>
+<style type="text/css">
+body {
+  width: 100%;
+  background-color: white;
+  padding: 0px;
+  margin: 0px;
+  font-family: 'Nunito', sans-serif;
+}
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  margin-top: 90px;
+  margin-left: 50px;
+}
+.tab li a {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  display: block;
+  padding: 12px 15px;
+  font-family: "Nunito", sans-serif;
+  font-size: 13px;
+  font-weight: 800;
+  border-radius: 5px;
+  background: #ffffff;
+  margin-bottom: 10px;
+  text-decoration: none;
+}
+.tab ul li.active a {
+  color: #0083ff;
+  border:1px solid blue;
+  border-color: #0083ff;
+  /*-webkit-box-shadow: 0px 5px 10px 0px rgba(0, 131, 255, 0.15);*/
+  box-shadow: 0px 5px 10px 0px rgba(0, 131, 255, 0.15);
+}
+.tabcontent{
+  margin-left: 110px;
+  margin-top: 88px;
+}
+.col-md-9{
+  width: 65%;
+}
+.col-md-9 h2{
+  margin-top: 0px;
+  color:blue;
+}
+.col-md-9 p{
+  font-size: 20px;
+  line-height: 30px;
+}
+.col-md-9 span img{
+  width: 45%;
+  margin-top: 15px;
+  margin-left: 180px;
+}
+.row{
+  margin-right: 0px;
+} 
+h3 {
+  font-size: 24px;
+  color: black;
+  font-weight: 800
+}
+.fa-angle-right{
+  float: right;
+  font-weight: 800;
+  font-size: 20px;
+  margin-top: -2px;
+  color: #000
+}
+.col-md-3 {
+  width: 25%;
+  margin-left: 35px;
+}
+</style>
+<body>
+  <div class="continer-fluid">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="col-md-3">
+          <ul class="tab"> 
+            <li class="tablinks" onclick="openCity(event, 'test1')" id="defaultOpen">
+              <a href="#">FRONT-END DEVELOPMENT <i class="fa fa-angle-right"></i></a>
+            </li>
+            <li class="tablinks" onclick="openCity(event, 'test2')">
+              <a href="#">FULL-STACK DEVELOPMENT <i class="fa fa-angle-right"></i></a>
+            </li>
+            <li class="tablinks" onclick="openCity(event, 'test3')">
+              <a href="#">SOFTWARE AS A SERVICE <i class="fa fa-angle-right"></i></a>
+            </li>
+            <li class="tablinks" onclick="openCity(event, 'test4')">
+              <a href="#">E-COMMERCE DEVELOPMENT <i class="fa fa-angle-right"></i></a>
+            </li>
+            <li class="tablinks" onclick="openCity(event, 'test5')">
+              <a href="#">API DEVELOPMENT <i class="fa fa-angle-right"></i></a>
+            </li>
+            <li class="tablinks" onclick="openCity(event, 'test6')">
+              <a href="#">MOBILE APP DESIGN <i class="fa fa-angle-right"></i></a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-md-9">
+          <div id="test1" class="tabcontent">
+            <h3>FRONT-END DEVELOPMENT</h3>
+            <p>They say that front end development is a lot like playing the bass – it’s relatively easy to learn, but difficult to master. It’s not just the practice of producing HTML, CSS and JavaScript for client side development. There’s so much change in the field that a front end developer needs to stay on top off, in addition to taking into consideration different screen sizes, operating systems, browsers, etc. Luckily, our front end developers are rock stars with their fingers on the pulse of technology.</p>
+            <span><img src="../IMAGE/graphic.png"></span>
+          </div>
+          <div id="test2" class="tabcontent">
+            <h3>FULL-STACK DEVELOPMENT</h3>
+            <p>Creating a beautiful, functional website is more than just the design; it’s more than the styling of the site. There is more to it than that. At ITBeeZone, our full stack development team specializes in that je ne sais quoi that is that more – they handle everything. From front to back end code writing to working on the database or server, our full stack developers really do stack up.</p> 
+            <span><img src="../IMAGE/fullstack.png"></span>
+          </div>
+          <div id="test3" class="tabcontent">
+            <h3>SOFTWARE AS A SERVICE</h3>
+            <p>Software as a service (or SaaS) is a increasingly popular method of delivering applications over the Internet – as a service. Instead of installing and maintaining software, you can just access it via the Internet, freeing yourself from complex software and hardware management.</p>
+            <span><img src="../IMAGE/software-as.png"></span>
+          </div>
+          <div id="test4" class="tabcontent">
+            <h3>E-COMMERCE DEVELOPMENT</h3>
+            <p>Various Open Source e-commerce applications exist. Some are better than others, but ITBeeZone wades through the noise to deliver a foundation-based solution that may include Magento, SpreeCommerce, OpenCart depending on your needs. Each provides different functionality based on time-to-market, PCI compliance and community-based extensions..</p> 
+            <span><img src="../IMAGE/ecommerce-dev.png"></span>
+          </div>
+          <div id="test5" class="tabcontent">
+            <h3>API DEVELOPMENT</h3>
+            <p>In essence, APIs help two independent systems communicate with each other through a programming interface. Lately, API software development has become increasingly popular with countless websites and online retailers.</p>
+            <span><img src="../IMAGE/api-dev.png"></span>
+          </div>
+          <div id="test6" class="tabcontent">
+            <h3>MOBILE APP DESIGN</h3>
+            <p>Creating a remarkable user-experience. After we’ve vetted your idea, we’ll create a prototype using intelligent design techniques and industry best practices. User research data informs UX/UI design. Whether it’s iPhone’s native look or a new gaming heads-up display, ITBeeZone can design what users want in order to successfully enter the App Store.</p> 
+            <span><img src="../IMAGE/uxdesign.png"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+<script>
+function openCity(evt, cityName) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(cityName).style.display = "block";
+    evt.currentTarget.className += " active";
+}
+document.getElementById("defaultOpen").click();
+</script>
+
+</body>
+</html>
+
+
+
