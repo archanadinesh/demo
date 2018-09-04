@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   </head>
 <style type="text/css">
 body{
@@ -19,6 +20,12 @@ body{
   padding: 0px;
   margin: 0px;
   font-family: 'Nunito', sans-serif;
+}
+body, html, .main {
+    height: 100%;
+}
+section {
+    min-height: 100%;
 }
 .icons{
   color: black;
@@ -147,7 +154,7 @@ body{
     animation-delay: 1s;
     -webkit-animation-delay: 1s;
 }
-
+                      
 .link {
     padding: 15px 35px;
     background: #7cc576;
@@ -174,36 +181,83 @@ body{
     -webkit-animation-fill-mode: both;
     animation-fill-mode: both;
 }
-/*html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    outline: 0;
-    font-weight: inherit;
-    font-style: inherit;
-    font-size: 100%;
-    font-family: inherit;
-    vertical-align: baseline;
-}*/
 *, *:before, *:after {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
+  } 
+  body {
+  width: 100%;
+  background-color: white;
+  padding: 0px;
+  margin: 0px;
+  font-family: 'Nunito', sans-serif;
 }
-/*.text-center {
-    text-align: center;
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  margin-top: 90px;
+  margin-left: 50px;
 }
-p {
-    line-height: 24px;
-    margin: 0;
+.tab li a {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  display: block;
+  padding: 12px 15px;
+  font-family: "Nunito", sans-serif;
+  font-size: 13px;
+  font-weight: 800;
+  border-radius: 5px;
+  background: #ffffff;
+  margin-bottom: 10px;
+  text-decoration: none;
 }
-p, ol, ul, td {
-    font-family: verdana, arial, helvetica, sans-serif;
-    font-size: 13px;
-    line-height: 18px;
-    margin: 33px;
-}*/
-
+.tab ul li.active a {
+  color: #0083ff;
+  border:1px solid blue;
+  border-color: #0083ff;
+  /*-webkit-box-shadow: 0px 5px 10px 0px rgba(0, 131, 255, 0.15);*/
+  box-shadow: 0px 5px 10px 0px rgba(0, 131, 255, 0.15);
+}
+.tabcontent{
+  margin-left: 110px;
+  margin-top: 88px;
+}
+.col-md-9{
+  width: 65%;
+}
+.col-md-9 h2{
+  margin-top: 0px;
+  color:blue;
+}
+.col-md-9 p{
+  font-size: 20px;
+  line-height: 30px;
+}
+.col-md-9 span img{
+  width: 45%;
+  margin-top: 15px;
+  margin-left: 180px;
+}
+.row{
+  margin-right: 0px;
+} 
+h3 {
+  font-size: 24px;
+  color: black;
+  font-weight: 800
+}
+.fa-angle-right{
+  float: right;
+  font-weight: 800;
+  font-size: 20px;
+  margin-top: -2px;
+  color: #000
+}
+.col-md-3 {
+  width: 25%;
+  margin-left: 35px;
+}                                  
 </style>
 <body>
   <div class="container-fluid">
@@ -212,6 +266,8 @@ p, ol, ul, td {
         <div class="icons"onclick="openNav()">&#9776; </div>
       </div>
       <div class="col-md-11 cus-col-md-11">
+        <div class="main">
+         <section>
         <div class="content1">
          <p>SERVICES</p>
          <span>WE OFFER EXCEPTIONAL SERVICE WITH COMPLIMENTARY HUGS.</span>
@@ -221,33 +277,251 @@ p, ol, ul, td {
            <div class="grid-box grid1">
             <h3 class="grid-title">WEB DEVELOPMENT</h3>
             <p class="grid-text">We deliver unparalleled web development solutions to fit each of our customers’ unique business requirements and strategies. Our team of experts utilize new technologies, enhanced frameworks.</p>
-            <p class="text-center"><button class="btn btn-more-info">VIEW MORE</button></p>
+            <p class="text-center"><a href="#section1"><button class="btn btn-more-info">VIEW MORE</button></a></p>
             <div class="grid-icon"><img src="../IMAGE/icon-2.png" class="img-fluid" alt="Service Icon"></div>
            </div>
             <div class="grid-box grid1">
             <h3 class="grid-title"><span>MOB DEVELOPMENT</span></h3>
             <p class="grid-text">Native apps? Check. Hybrid mobile apps? We do those. Not yet sure what type of app is best for you? No problem. We’re also experts with mobile strategy and design. Whether iOS, Android or HTML5 fits.</p>
-            <p class="text-center"><button class="btn btn-more-info">VIEW MORE</button></p>
+            <p class="text-center"><a href="#section2"><button class="btn btn-more-info">VIEW MORE</button></a></p>
             <div class="grid-icon"><img src="../IMAGE/icon-3.png" class="img-fluid" alt="Service Icon"></div>
            </div>
             <div class="grid-box grid1">
             <h3 class="grid-title"><span>CREATIVE DESIGN</span></h3>
             <p class="grid-text">More than just colors and fonts, modern creative design involves the creation of intuitive and efficient interfaces that allow the user to accomplish their goals and drive the success of your product.</p>
-            <p class="text-center"><span class="link animated fadeInUp delay-1s servicelink know-more-btn">VIEW MORE</span></p> 
+            <p class="text-center"><a href="#section3"><button class="btn btn-more-info">VIEW MORE</button></a></p> 
             <div class="grid-icon"><img src="../IMAGE/icon-4.png" class="img-fluid" alt="Service Icon"></div>
            </div>
             <div class="grid-box grid1">
             <h3 class="grid-title"><span>DEPLOYMENT</span></h3>
             <p class="grid-text">We have vast experience of preparing server and deploy applications in the cloud. We worked different distributions of Linux in Amazon EC2, Linode, Rackspace, Heroku, GoDaddy, Brightbox and Site5..</p>
-            <p class="text-center"><button class="btn btn-more-info">VIEW MORE</button></p>
+            <p class="text-center"><a href="#section4"><button class="btn btn-more-info">VIEW MORE</button></a></p>
             <div class="grid-icon"><img src="../IMAGE/icon-5.png" class="img-fluid" alt="Service Icon"></div>
+          </div>
            </div>
+          </div>
+        </div>
+      </section>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="main" id="section1">
+  <div class="continer-fluid">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="col-md-3">
+          <ul class="tab"> 
+            <li class="tablinks" onclick="openCity(event, 'test1')" id="defaultOpen">
+              <a href="#">FRONT-END DEVELOPMENT <i class="fa fa-angle-right"></i></a>
+            </li>
+            <li class="tablinks" onclick="openCity(event, 'test2')">
+              <a href="#">FULL-STACK DEVELOPMENT <i class="fa fa-angle-right"></i></a>
+            </li>
+            <li class="tablinks" onclick="openCity(event, 'test3')">
+              <a href="#">SOFTWARE AS A SERVICE <i class="fa fa-angle-right"></i></a>
+            </li>
+            <li class="tablinks" onclick="openCity(event, 'test4')">
+              <a href="#">E-COMMERCE DEVELOPMENT <i class="fa fa-angle-right"></i></a>
+            </li>
+            <li class="tablinks" onclick="openCity(event, 'test5')">
+              <a href="#">API DEVELOPMENT <i class="fa fa-angle-right"></i></a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-md-9">
+          <div id="test1" class="tabcontent">
+            <h3>FRONT-END DEVELOPMENT</h3>
+            <p>They say that front end development is a lot like playing the bass – it’s relatively easy to learn, but difficult to master. It’s not just the practice of producing HTML, CSS and JavaScript for client side development. There’s so much change in the field that a front end developer needs to stay on top off, in addition to taking into consideration different screen sizes, operating systems, browsers, etc. Luckily, our front end developers are rock stars with their fingers on the pulse of technology.</p>
+            <span><img src="../IMAGE/graphic.png"></span>
+          </div>
+          <div id="test2" class="tabcontent">
+            <h3>FULL-STACK DEVELOPMENT</h3>
+            <p>Creating a beautiful, functional website is more than just the design; it’s more than the styling of the site. There is more to it than that. At ITBeeZone, our full stack development team specializes in that je ne sais quoi that is that more – they handle everything. From front to back end code writing to working on the database or server, our full stack developers really do stack up.</p> 
+            <span><img src="../IMAGE/fullstack.png"></span>
+          </div>
+          <div id="test3" class="tabcontent">
+            <h3>SOFTWARE AS A SERVICE</h3>
+            <p>Software as a service (or SaaS) is a increasingly popular method of delivering applications over the Internet – as a service. Instead of installing and maintaining software, you can just access it via the Internet, freeing yourself from complex software and hardware management.</p>
+            <span><img src="../IMAGE/software-as.png"></span>
+          </div>
+          <div id="test4" class="tabcontent">
+            <h3>E-COMMERCE DEVELOPMENT</h3>
+            <p>Various Open Source e-commerce applications exist. Some are better than others, but ITBeeZone wades through the noise to deliver a foundation-based solution that may include Magento, SpreeCommerce, OpenCart depending on your needs. Each provides different functionality based on time-to-market, PCI compliance and community-based extensions..</p> 
+            <span><img src="../IMAGE/ecommerce-dev.png"></span>
+          </div>
+          <div id="test5" class="tabcontent">
+            <h3>API DEVELOPMENT</h3>
+            <p>In essence, APIs help two independent systems communicate with each other through a programming interface. Lately, API software development has become increasingly popular with countless websites and online retailers.</p>
+            <span><img src="../IMAGE/api-dev.png"></span>
           </div>
         </div>
       </div>
     </div>
   </div>
-          
+</div>
+<div class="main" id="section2">
+  <div class="continer-fluid">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="col-md-3">
+          <ul class="tab"> 
+            <li class="tablinks" onclick="openCity(event, 'rest1')" id="defaultOpen">
+              <a href="#">MOBILE DEVELOPMENT STRATEGY <i class="fa fa-angle-right"></i></a>
+            </li>
+            <li class="tablinks" onclick="openCity(event, 'rest2')">
+              <a href="#">MOBILE APP DESIGN <i class="fa fa-angle-right"></i></a>
+            </li>
+            <li class="tablinks" onclick="openCity(event, 'rest3')">
+              <a href="#">IOS DEVELOPMENT <i class="fa fa-angle-right"></i></a>
+            </li>
+            <li class="tablinks" onclick="openCity(event, 'rest4')">
+              <a href="#">ANDROID DEVELOPMENT <i class="fa fa-angle-right"></i></a>
+            </li>
+            <li class="tablinks" onclick="openCity(event, 'rest5')">
+              <a href="#">HTML5 DEVELOPMENT <i class="fa fa-angle-right"></i></a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-md-9">
+          <div id="rest1" class="tabcontent">
+            <h3>MOBILE DEVELOPMENT STRATEGY</h3>
+            <p>Your plan. Your vision. Actualized. Let our team’s diverse development expertise open new doors for your business. Stay competitive with cross-platform, HTML5 apps. Can your app survive in the competitive mobile marketplace? We can show you how. The right mobile app name, business model, hardware platform and timely deployment methods are important… but will your idea work?.</p>
+            <span><img src="../IMAGE/mobile.png"></span>
+          </div>
+          <div id="rest2" class="tabcontent">
+            <h3>MOBILE APP DESIGN</h3>
+            <p>Creating a remarkable user-experience. After we’ve vetted your idea, we’ll create a prototype using intelligent design techniques and industry best practices. User research data informs UX/UI design. Whether it’s iPhone’s native look or a new gaming heads-up display, ITBeeZone can design what users want in order to successfully enter the App Store.</p> 
+            <span><img src="../IMAGE/uxdesign.png"></span>
+          </div>
+          <div id="rest3" class="tabcontent">
+            <h3>IOS DEVELOPMENT</h3>
+            <p>Your users love their iOS apps; and so do we. Using best practices in iOS development from strategy to implementation, we employ mobile technology that will make your app succeed in today’s mobile marketplace.</p>
+            <span><img src="../IMAGE/ios.png"></span>
+          </div>
+          <div id="rest4" class="tabcontent">
+            <h3>ANDROID DEVELOPMENT</h3>
+            <p>Smartphones. Tablets. Google Play. We provide clients with access to an award-winning, full-service Android development team. ITBeeZone is a place where we connect UI/UX design and Java programming to create stunning Android mobile apps..</p> 
+            <span><img src="../IMAGE/android.png"></span>
+          </div>
+          <div id="rest5" class="tabcontent">
+            <h3>HTML5 DEVELOPMENT</h3>
+            <p>We specialize in cross-platform and hybrid mobile apps. But, imagine building one app that can run on multiple devices at once. It can be tricky, but with one budget and one solution we can take you further, faster. That’s why ItBeeZone builds HTML5 apps to help our clients deliver to more users. One app to rule them all..</p>
+            <span><img src="../IMAGE/html5.png"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div> 
+<div class="main" id="section3">
+<div class="continer-fluid">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="col-md-3">
+          <ul class="tab"> 
+            <li class="tablinks" onclick="openCity(event, 'west1')" id="defaultOpen">
+              <a href="#">WEB DESIGN <i class="fa fa-angle-right"></i></a>
+            </li>
+            <li class="tablinks" onclick="openCity(event, 'west2')">
+              <a href="#">PROTOTYPING <i class="fa fa-angle-right"></i></a>
+            </li>
+            <li class="tablinks" onclick="openCity(event, 'west3')">
+              <a href="#">INTERFACE DESIGN <i class="fa fa-angle-right"></i></a>
+            </li>
+            <li class="tablinks" onclick="openCity(event, 'west4')">
+              <a href="#">CONTENT MANAGEMENT SYSTEMS<i class="fa fa-angle-right"></i></a>
+            </li>
+            <li class="tablinks" onclick="openCity(event, 'west5')">
+              <a href="#">BRANDING <i class="fa fa-angle-right"></i></a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-md-9">
+          <div id="west1" class="tabcontent">
+            <h3>WEB DESIGN</h3>
+            <p>From one-page websites to enterprise apps, our web designs are crafted around your goals.</p>
+            <span><img src="../IMAGE/front.png"></span>
+          </div>
+          <div id="west2" class="tabcontent">
+            <h3>PROTOTYPING</h3>
+            <p>Simply put, wireframing and prototyping save you time and money. Rather than jumping right into developing your project, creating wireframes or a prototype helps to vet out changes that should be made to the design and structure of your website or app before development begins. With wireframes or a prototype (or both!), fewer design and development hours (and dollars) are wasted on “re-dos.”.</p> 
+            <span><img src="../IMAGE/prototype.png"></span>
+          </div>
+          <div id="west3" class="tabcontent">
+            <h3>INTERFACE DESIGN</h3>
+            <p>A great user interface can make all the difference. In some ways, it’s the most important part of your product. While a bad user interface can make even the best engineered products difficult or impossible to use, a great interface will help you, and your users, reach your goals.</p>
+            <span><img src="../IMAGE/interface.png"></span>
+          </div>
+          <div id="west4" class="tabcontent">
+            <h3>CONTENT MANAGEMENT SYSTEMS</h3>
+            <p>A great user interface can make all the difference. In some ways, it’s the most important part of your product. While a bad user interface can make even the best engineered products difficult or impossible to use, a great interface will help you, and your users, reach your goals.</p> 
+            <span><img src="../IMAGE/cmsview.png"></span>
+          </div>
+          <div id="west5" class="tabcontent">
+            <h3>BRANDING</h3>
+            <p>Powerful. Precise. Permanent. Your product’s story begins with your brand..</p>
+            <span><img src="../IMAGE/brand.png"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div> 
+<div class="main" id="section4">
+<div class="continer-fluid">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="col-md-3">
+          <ul class="tab"> 
+            <li class="tablinks" onclick="openCity(event, 'best1')" id="defaultOpen">
+              <a href="#">WEB HOSTING <i class="fa fa-angle-right"></i></a>
+            </li>
+            <li class="tablinks" onclick="openCity(event, 'best2')">
+              <a href="#">PERFORMANCE TUNING <i class="fa fa-angle-right"></i></a>
+            </li>
+            <li class="tablinks" onclick="openCity(event, 'best3')">
+              <a href="#">SERVER ADMINISTRATION <i class="fa fa-angle-right"></i></a>
+            </li>
+            <li class="tablinks" onclick="openCity(event, 'best4')">
+              <a href="#">TECHNICAL SUPPORT<i class="fa fa-angle-right"></i></a>
+            </li>
+            <li class="tablinks" onclick="openCity(event, 'best5')">
+              <a href="#">DIGITAL MARKETING <i class="fa fa-angle-right"></i></a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-md-9">
+          <div id="best1" class="tabcontent">
+            <h3>WEB HOSTING</h3>
+            <p>When it comes to your hosting needs, ITBeeZone has you covered. Every last one of our web servers has 99.9% uptime to keep business applications running smoothly, after deployment.</p>
+            <span><img src="../IMAGE/webhosting.png"></span>
+          </div>
+          <div id="best2" class="tabcontent">
+            <h3>PERFORMANCE TUNING</h3>
+            <p>Like a car needs a tune-up from time to time, performance tuning is a necessary part of the maintenance of your technology.</p> 
+            <span><img src="../IMAGE/performance.png"></span>
+          </div>
+          <div id="best3" class="tabcontent">
+            <h3>SERVER ADMINISTRATION</h3>
+            <p>Our server administration solutions provide you with 24/7 access to our expert server management team. From server optimization, security, and monitoring, we remotely handle all of your server’s technical issues</p>
+            <span><img src="../IMAGE/server.png"></span>
+          </div>
+          <div id="best4" class="tabcontent">
+            <h3>TECHNICAL SUPPORT</h3>
+            <p>Web and mobile technical support when you need it. Your web or mobile project may require technical support on an ongoing basis, and ITBeeZone is here to help.</p> 
+            <span><img src="../IMAGE/support.png"></span>
+          </div>
+          <div id="best5" class="tabcontent">
+            <h3>DIGITAL MARKETING</h3>
+            <p>Our data-driven digital marketing strategies seek to deeply understand user intent and capitalize on it..</p>
+            <span><img src="../IMAGE/digital.png"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>      
 <script>
 function openNav() {
    document.getElementById("mySidenav").style.width = "98.5%";
@@ -263,125 +537,66 @@ function openNav() {
     }
 
 });
+$(document).ready(function(){
+  $("a").on('click', function(event) {
+    if (this.hash !== "") {
+      event.preventDefault();
+      var hash = this.hash;
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+        window.location.hash = hash;
+      });
+    } 
+  });
+});
+function openCity(evt, cityName) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(cityName).style.display = "block";
+    evt.currentTarget.className += " active";
+}
+document.getElementById("defaultOpen").click();
+
+function openCity(evt, cityName) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(cityName).style.display = "block";
+    evt.currentTarget.className += " active";
+}
+document.getElementById("defaultOpen").click();
+
+function openCity(evt, cityName) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(cityName).style.display = "block";
+    evt.currentTarget.className += " active";
+}
+document.getElementById("defaultOpen").click();
 </script>
 </body>
 </html>
 
 
 
-
-<!-- <a href="#" class="go-top" style="display: inline;">Back to top</a>
-
-
-<script>
-        $(document).ready(function() {
-            // Show or hide the sticky footer button
-            $(window).scroll(function() {
-                if ($(this).scrollTop() > 200) {
-                    $('.go-top').fadeIn(500);
-                } else {
-                    $('.go-top').fadeOut(300);
-                }
-            });
-
-            // Animate the scroll to top
-            $('.go-top').click(function(event) {
-                event.preventDefault();
-
-                $('html, body').animate({scrollTop: 0}, 300);
-            })
-        });
-    </script>
-
-
-    .go-top {
-    position: fixed;
-    bottom: 0.75em;
-    right: 0.5em;
-    text-decoration: none;
-    color: white;
-    background-color: rgba(0, 0, 0, 0.25);
-    font-size: 12px;
-    padding: 10px;
-    display: none;
-    margin: 0;
-}
-
-.go-top:hover {
-    background-color: rgba(0, 0, 0, 0.6);
-    color: white;
-    text-decoration: none;
-}
-
- -->
-
-
-<!-- .know-more-btn {
-    text-decoration: none !important;
-    font-size: 12px;
-}
-.delay-1s {
-    animation-delay: 1s;
-    -webkit-animation-delay: 1s;
-}
-
-.link {
-    padding: 15px 35px;
-    background: #7cc576;
-    color: #fff !important;
-    font-size: 16px;
-    font-weight: 400;
-    font-family: 'Montserrat', sans-serif;
-    display: inline-block;
-    border-radius: 3px;
-    text-transform: uppercase;
-    line-height: 25px;
-    margin-bottom: 20px;
-    transition: all 0.3s ease-in-out;
-    -moz-transition: all 0.3s ease-in-out;
-    -webkit-transition: all 0.3s ease-in-out;
-}
-.fadeInUp {
-    -webkit-animation-name: fadeInUp;
-    animation-name: fadeInUp;
-}
-.animated {
-    -webkit-animation-duration: 1s;
-    animation-duration: 1s;
-    -webkit-animation-fill-mode: both;
-    animation-fill-mode: both;
-}
-html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    outline: 0;
-    font-weight: inherit;
-    font-style: inherit;
-    font-size: 100%;
-    font-family: inherit;
-    vertical-align: baseline;
-}
-*, *:before, *:after {
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-}
-.text-center {
-    text-align: center;
-}
-p {
-    line-height: 24px;
-    margin: 0;
-}
-p, ol, ul, td {
-    font-family: verdana, arial, helvetica, sans-serif;
-    font-size: 13px;
-    line-height: 18px;
-    margin: 33px;
-}
-
-
-
-
-<span class="link animated fadeInUp delay-1s servicelink know-more-btn">MORE SERVICES</span> -->
