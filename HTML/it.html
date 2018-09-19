@@ -1,0 +1,701 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>itbee-zone</title>
+      <meta charset="UTF-8">
+      <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i" rel="stylesheet">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<style type="text/css">
+body{
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  line-height: 1.42857143;
+  padding: 0px;
+  margin: 0px;
+  font-weight: 400;
+  height: 100%;
+  color: #404040;
+}
+.third-secion {
+  width: 100% !important;
+  height:800px;
+  background-color: #130e4e;
+  padding: 6% 0 8%;
+  margin-top: -100px;
+}
+.success{
+  font-size: 35px;
+  font-weight: 900;
+  margin-left: 60px;
+  color:#fff;
+}
+.world{
+  font-size: 15px;
+  margin-left: 60px;
+  color:#fff;
+}
+.slider{
+  margin: auto;
+  background-color: #fff;
+  min-height: 495px;
+  position: relative;
+  border-radius: 4px;
+  margin-left: 60px;
+  margin-right: 60px;
+}
+.content {
+  background-image: linear-gradient(270deg,#5223d2 0,#0494dc 100%);
+  padding: 3% 6%;
+  position: absolute;
+  left: -50px;
+  top: 65px;
+}
+.content p {
+  border-top: 1px solid #fff;
+  display: flex;
+  color: #fff;
+  padding: 10px 0;
+}
+.talent{
+  color: lightgray;
+  font-size: 17px;
+  margin-left: 25px;
+  margin-top: -15px;
+  line-height: 22px;
+  padding-bottom: 5px;
+  font-weight: 600;
+  }
+.student img {
+    margin-left: 605px;
+    margin-top: -425px;
+    width: 100%;
+    height: 492px;
+}
+.left-arrow img{
+  margin-top: 349px;
+  margin-left: 428px
+}
+.right-arrow img{
+  margin-left: 485px;
+  margin-top: -79px;
+}
+/*.case-studies-slider-main-container, .case-studies-slider-main-container-mob {
+  background-color: #130e4e;
+  padding: 6% 0 8%;
+}
+.container {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.case-studies-slider {
+    width: 90%;
+    position: relative;
+}
+.tab-content>.active {
+    display: block;
+}
+.row {
+    margin: 0;
+    }
+.case-studies-title, .case-studies-title p {
+    padding: 10px 40px 10px 0;
+  }
+.col-md-6 {
+    width: 50%;
+}
+.col-md-6{
+    float: left;
+  }
+  .col-lg-6,.col-md-6,.col-sm-6,.col-xs-6{
+    position: relative;
+    min-height: 1px;
+  }
+.case-studies-title>h2 {
+    margin: 0;
+}
+.case-studies-title h2, .case-studies-title p {
+    color: #fff;
+}
+h2 {
+    font-size: 48px;
+    font-size: 60px;
+    font-family: bebas-neue;
+    color: #404040;
+    font-weight: 500;
+    margin: 10px 0;
+  }
+.span, .more-services-section, .slider-tags {
+    color: #808080;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 22px;
+  }
+.case-studies-title p {
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 22px;
+}
+.case-studies-title, .case-studies-title p {
+    padding: 10px 40px 10px 0;
+}
+.case-studies-title h2, .case-studies-title p {
+    color: #fff;
+  }
+  .case-studies-slider-inner {
+    margin: auto;
+    background-color: #fff;
+    min-height: 495px;
+    position: relative;
+    border-radius: 4px;
+}
+.casestudy-content {
+    background-image: linear-gradient(270deg, #5223d2 0, #0494dc 100%);
+    padding: 3% 6%;
+    position: absolute;
+    left: -50px;
+    top: 65px;
+}
+.col-lg-6 {
+    width: 50%;
+}
+.col-lg-6 {
+    float: left;
+}
+.carousel {
+    position: relative;
+    }
+.carousel-inner {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+.carousel-inner>.item.active, .carousel-inner>.item.next.left, .carousel-inner>.item.prev.right {
+    left: 0;
+    transform: translate3d(0,0,0);
+}
+.carousel-inner-heading>h6 {
+    font-size: 18px;
+    color: #fff;
+    padding: 0;
+    line-height: 24px;
+    font-family: Franklin-Gothic-URW;
+    letter-spacing: 0;
+    font-weight: 500;
+    }
+    .casestudy-content p {
+    border-top: 1px solid #fff;
+    display: flex;
+    color: #fff;
+    padding: 10px 0;
+    margin: 0;
+  }
+.carousel-inner>.item {
+    transition: transform .6s ease-in-out;
+    backface-visibility: hidden;
+    perspective: 1000px;
+    }
+.carousel-inner-heading>h6 {
+    font-size: 18px;
+    color: #fff;
+    padding: 0;
+    line-height: 24px;
+    font-family: Franklin-Gothic-URW;
+    letter-spacing: 0;
+    font-weight: 500;
+  }
+ .casestudy-content p {
+    border-top: 1px solid #fff;
+    display: flex;
+    color: #fff;
+    padding: 10px 0;
+    margin: 0;
+}
+.cs-carousel-control {
+    float: right;
+    width: 50%;
+    text-align: right;
+    position: relative;
+}
+.cs-carousel-control .carousel-control {
+    margin: 16% auto auto;
+    width: 20%;
+    left: 92%;
+    top: 0;
+  }
+.lozad[data-loaded*="true"] {
+    opacity: 1;
+}
+
+.lozad {
+    transition: opacity .15s;
+  }
+.cs-carousel-control .carousel-control.right {
+    right: -51%;
+}
+.case-study-images-slider {
+    width: 50%;
+}
+
+.case-study-images-slider {
+    position: absolute;
+    top: -115px;
+    right: 3%;
+    padding: 0;
+    }
+.carousel-inner {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}*/
+</style>
+<body>
+<div class="container-fluid">
+    <div class="row">
+        <div class="third-secion">
+         <p class="success">PORTFOLIO</p>
+         <p class="world">FRESH PORTFOLIO OF DESIGNS THAT WILL KEEP YOU WANTING MORE.</p>
+         <div class="slider">
+           <div class="col-md-6 content">
+             <span class="talent">HORUS PROVEEDORES</span>
+             <p>HORUS is an application created for evaluation and support to the value chain of organizations.This tool allows your company to know and evaluate its stakeholders in different dimensions, not complying with the control authorities until their development in good business practices.</p>
+           </div>
+           <div class="left-arrow">
+              <img src="../IMAGE/left-arrow.png">
+            </div>
+            <div class="right-arrow">
+               <img src="../IMAGE/right-arrow.png">
+            </div>
+           <div class="col-md-6 student">
+              <img src="../IMAGE/Portfolio2.png">
+           </div>
+         </div>
+        </div>
+    </div>
+  </div> 
+  <!-- <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 casestudy-content">
+  <div id="myCarousel2" class="carousel slide" data-interval="false" data-ride="carousel">
+    <div class="carousel-inner">
+      <div class="item">
+        <div class="carousel-inner-heading">
+          <h6>Intelligent Talent Acquisition: ML For Recruitment</h6>                  
+          <p>One of the biggest problems recruiters face to this day is the lack of a system to find deserving candidates for a specific job. We built a Machine Learning model that matches the right candidates to the right job using not just their resumes, but social data and a number of other parameters such as GitHub activity, LinkedIn recommendations, etc. The same matching algorithm is also used to find the ideal jobs for good candidates.</p>
+        </div>
+      </div> 
+      <div class="item active">
+        <div class="carousel-inner-heading">
+          <h6>Detecting Security Anomalies Using AI For a Leading Cloud Security Product</h6>    
+          <p>A leading cloud security provider wanted us to detect anomalies and abnormal peaks in outbound traffic, using event logs. We set up a continuous feed of raw data logs, using AWS Kinesis rom AWS Cloud-Trail. Data was then grouped by Time, Usertype and Logtype into multiple batches. From these batches, variables were generated to feed in to the Machine Learning model which finally predicted if the data entry is an anomaly or not, using logistic regression.</p>
+        </div>
+      </div>
+        <div class="carousel-inner-heading">
+          <h6>AI-based Recommendation Engine For A Billion Dollar Manufacturer</h6>               <p>When a world-famous manufacturer approached us with seven years’ worth of sales data and a vague need to make sense of it, we built them a platform that leverages Machine Learning to help improve sales through channel partners. Our models help them predict the probability of a quote turning into an order, and our ML algorithms make sure they never leave money on the table during bids.</p>
+        </div>
+      </div>
+    </div>
+    <div class="row cs-carousel-control">
+      <a class="left carousel-control" href=".carousel" data-slide="prev">
+        <img data-src="https://www.ideas2it.com/wp-content/themes/ideas2it-theme/assets/images/left-arrow.png" alt="Left arrow " class="img-responsive lozad" src="https://www.ideas2it.com/wp-content/themes/ideas2it-theme/assets/images/left-arrow.png" data-loaded="true">
+      </a>
+      <a class="right carousel-control" href=".carousel" data-slide="next">
+        <img data-src="https://www.ideas2it.com/wp-content/themes/ideas2it-theme/assets/images/right-arrow.png " alt="Right arrow" class="img-responsive lozad" src="https://www.ideas2it.com/wp-content/themes/ideas2it-theme/assets/images/right-arrow.png " data-loaded="true">
+      </a>
+  </div>
+</div>
+<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 case-study-images-slider">
+  <div id="myCarousel1" class="carousel slide" data-ride="carousel" data-interval="false">
+    <div class="carousel-inner">
+      <div class="item">
+        <img width="556" height="548" src="https://www.ideas2it.com/wp-content/uploads/2018/06/ML-for-recruitment.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" srcset="https://www.ideas2it.com/wp-content/uploads/2018/06/ML-for-recruitment.jpg 556w, https://www.ideas2it.com/wp-content/uploads/2018/06/ML-for-recruitment-300x296.jpg 300w, https://www.ideas2it.com/wp-content/uploads/2018/06/ML-for-recruitment-100x100.jpg 100w" sizes="(max-width: 767px) 89vw, (max-width: 1000px) 54vw, (max-width: 1071px) 543px, 580px">                       
+      </div>
+        <img width="556" height="548" src="https://www.ideas2it.com/wp-content/uploads/2018/06/leading-cloud-security-product.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" srcset="https://www.ideas2it.com/wp-content/uploads/2018/06/leading-cloud-security-product.jpg 556w, https://www.ideas2it.com/wp-content/uploads/2018/06/leading-cloud-security-product-300x296.jpg 300w, https://www.ideas2it.com/wp-content/uploads/2018/06/leading-cloud-security-product-100x100.jpg 100w" sizes="(max-width: 767px) 89vw, (max-width: 1000px) 54vw, (max-width: 1071px) 543px, 580px">               
+      </div>
+        <img width="556" height="548" src="https://www.ideas2it.com/wp-content/uploads/2018/06/AI-based-recommendation.jpg.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" srcset="https://www.ideas2it.com/wp-content/uploads/2018/06/AI-based-recommendation.jpg.jpg 556w, https://www.ideas2it.com/wp-content/uploads/2018/06/AI-based-recommendation.jpg-300x296.jpg 300w, https://www.ideas2it.com/wp-content/uploads/2018/06/AI-based-recommendation.jpg-100x100.jpg 100w" sizes="(max-width: 767px) 89vw, (max-width: 1000px) 54vw, (max-width: 1071px) 543px, 580px">         
+      </div>
+    </div>
+  </div>                               -->
+
+
+
+
+  <section class="main-section paddind" id="Portfolio">
+  <div class="container">
+    <h2>Portfolio</h2>
+    <h6 class="sub-title-h6">Fresh portfolio of designs that will keep you wanting more.</h6>
+  </div>
+  <div class="l-subsection full_height full_width">
+    <div class="l-subsection-h g-html i-cf">
+      <div class="w-portfolio ratio_3-2">
+        <div class="w-portfolio-list">
+          <div class="w-portfolio-item type_extended active" style="margin-bottom: 437px;">
+            <div class="w-portfolio-item-h">
+              <a class="w-portfolio-item-anchor" href="javascript:void(0);" data-id="2574">
+                <div class="w-portfolio-item-image"><img src="assets/Portfolio1.png" alt="LIFELINLKER"></div>
+                <div class="w-portfolio-item-meta">
+                  <div class="w-portfolio-item-meta-h">
+                    <h2 class="w-portfolio-item-title">LIFELINLKER</h2>
+                    <span class="w-portfolio-item-arrow"></span>
+                    <span class="w-portfolio-item-text"></span>
+                  </div>
+                </div>
+                <div class="w-portfolio-item-hover"><i class="fa fa-plus"></i></div>
+              </a>
+              <div class="w-portfolio-item-details" style="display: block;">
+                <div class="w-portfolio-item-details-h">
+                  <div class="w-portfolio-item-details-content">                <div class="w-portfolio-item-details-content-preview">
+                  <img src="assets/Portfolio1.png" alt="lifelinker">
+                  <h3>LIFELINLKER</h3>
+                </div>
+                <div class="w-portfolio-item-details-content-text">
+                  <p>LifeLinker provides a trusted way for people to learn of the passing of those they care about and, in turn, to share the news of their own eventual passing with family, friends and others they wish to tell.</p>
+                  <h5>PROJECT DETAILS</h5>
+                  <div class="details">
+                    <table>
+                       <tbody><tr>
+                          <td class="td-width">CLIENT : </td>
+                          <td>David, USA</td>
+                       </tr>
+                       <tr>
+                         <td class="td-width">TECHNOLOGY :</td>
+                         <td>Ruby on Rails 4.2, MySQL, HTML &amp; CSS, Javascript, Jquery, Capistrano</td>
+                       </tr>
+                    </tbody></table>
+                  </div>
+                </div>
+              </div>
+                  <div class="w-portfolio-item-details-close"></div>
+                  <div class="w-portfolio-item-details-arrow to_prev" style="display: none;"><i class="fa fa-angle-left"></i></div>
+                  <div class="w-portfolio-item-details-arrow to_next"><i class="fa fa-angle-right"></i></div>
+                </div>
+              </div>
+              <textarea class="w-portfolio-hidden-content" style="display:none">                &lt;div class="w-portfolio-item-details-content-preview"&gt;
+                  &lt;img src="assets/Portfolio1.png" alt="lifelinker"&gt;
+                  &lt;h3&gt;LIFELINLKER&lt;/h3&gt;
+                &lt;/div&gt;
+                &lt;div class="w-portfolio-item-details-content-text"&gt;
+                  &lt;p&gt;LifeLinker provides a trusted way for people to learn of the passing of those they care about and, in turn, to share the news of their own eventual passing with family, friends and others they wish to tell.&lt;/p&gt;
+                  &lt;h5&gt;PROJECT DETAILS&lt;/h5&gt;
+                  &lt;div class="details"&gt;
+                    &lt;table&gt;
+                       &lt;tr&gt;
+                          &lt;td class="td-width"&gt;CLIENT : &lt;/td&gt;
+                          &lt;td&gt;David, USA&lt;/td&gt;
+                       &lt;/tr&gt;
+                       &lt;tr&gt;
+                         &lt;td class="td-width"&gt;TECHNOLOGY :&lt;/td&gt;
+                         &lt;td&gt;Ruby on Rails 4.2, MySQL, HTML &amp; CSS, Javascript, Jquery, Capistrano&lt;/td&gt;
+                       &lt;/tr&gt;
+                    &lt;/table&gt;
+                  &lt;/div&gt;
+                &lt;/div&gt;
+              </textarea>
+            </div>
+          </div>
+          <div class="w-portfolio-item type_extended">
+            <div class="w-portfolio-item-h">
+              <a class="w-portfolio-item-anchor" href="javascript:void(0);" data-id="2742">
+                <div class="w-portfolio-item-image"><img src="assets/Portfolio2.png" alt="HORUS PROVEEDORES"></div>
+                <div class="w-portfolio-item-meta">
+                  <div class="w-portfolio-item-meta-h">
+                    <h2 class="w-portfolio-item-title">HORUS</h2>
+                    <span class="w-portfolio-item-arrow"></span>
+                    <span class="w-portfolio-item-text"></span>
+                  </div>
+                </div>
+                <div class="w-portfolio-item-hover"><i class="fa fa-plus"></i></div>
+              </a>
+              <div class="w-portfolio-item-details" style="display: none;">
+                <div class="w-portfolio-item-details-h">
+                  <div class="w-portfolio-item-details-content"></div>
+                  <div class="w-portfolio-item-details-close"></div>
+                  <div class="w-portfolio-item-details-arrow to_prev"><i class="fa fa-angle-left"></i></div>
+                  <div class="w-portfolio-item-details-arrow to_next"><i class="fa fa-angle-right"></i></div>
+                </div>
+              </div>
+              <textarea class="w-portfolio-hidden-content" style="display:none">                &lt;div class="w-portfolio-item-details-content-preview"&gt;
+                  &lt;img src="assets/Portfolio2.png" alt="HORUS PROVEEDORES"&gt;
+                  &lt;h3&gt;HORUS&lt;/h3&gt;
+                &lt;/div&gt;
+                &lt;div class="w-portfolio-item-details-content-text"&gt;
+                  &lt;div&gt;
+                    &lt;p&gt;HORUS is an application created for evaluation and support to the value chain of organizations.&lt;/p&gt;
+                    &lt;p&gt;This tool allows your company to know and evaluate its stakeholders in different dimensions, not complying with the control authorities until their development in good business practices. &lt;/p&gt;
+                  &lt;/div&gt;
+                  &lt;div&gt;&lt;/div&gt;
+                  &lt;div&gt;
+                    &lt;h5&gt;PROJECT DETAILS&lt;/h5&gt;
+                  &lt;/div&gt;
+                  &lt;div class="details"&gt;
+                    &lt;table&gt;
+                       &lt;tr&gt;
+                          &lt;td class="td-width"&gt;CLIENT:&lt;/td&gt;
+                          &lt;td&gt;Sebastian Almeida, South America&lt;/td&gt;
+                       &lt;/tr&gt;
+                       &lt;tr&gt;
+                         &lt;td class="td-width"&gt;TECHNOLOGY :&lt;/td&gt;
+                         &lt;td&gt;Ruby on Rails 4.2, Mysql, DB Backup, Capistrano&lt;/td&gt;
+                       &lt;/tr&gt;
+                    &lt;/table&gt;
+                  &lt;/div&gt;
+                &lt;/div&gt;
+              </textarea>
+            </div>
+          </div>
+          <div class="w-portfolio-item type_extended">
+            <div class="w-portfolio-item-h">
+              <a class="w-portfolio-item-anchor" href="javascript:void(0);" data-id="2742">
+                <div class="w-portfolio-item-image"><img src="assets/Portfolio3.png" alt="VIVENTO"></div>
+                <div class="w-portfolio-item-meta">
+                  <div class="w-portfolio-item-meta-h">
+                    <h2 class="w-portfolio-item-title">VIVENTO</h2>
+                    <span class="w-portfolio-item-arrow"></span>
+                    <span class="w-portfolio-item-text"></span>
+                  </div>
+                </div>
+                <div class="w-portfolio-item-hover"><i class="fa fa-plus"></i></div>
+              </a>
+              <div class="w-portfolio-item-details" style="display: none;">
+                <div class="w-portfolio-item-details-h">
+                  <div class="w-portfolio-item-details-content"></div>
+                  <div class="w-portfolio-item-details-close"></div>
+                  <div class="w-portfolio-item-details-arrow to_prev"><i class="fa fa-angle-left"></i></div>
+                  <div class="w-portfolio-item-details-arrow to_next"><i class="fa fa-angle-right"></i></div>
+                </div>
+              </div>
+              <textarea class="w-portfolio-hidden-content" style="display:none">                &lt;div class="w-portfolio-item-details-content-preview"&gt;
+                  &lt;img src="assets/Portfolio3.png" alt="VIVENTO"&gt;
+                  &lt;h3&gt;VIVENTO&lt;/h3&gt;
+                &lt;/div&gt;
+                &lt;div class="w-portfolio-item-details-content-text"&gt;
+                  &lt;div&gt;
+                    &lt;p&gt;Our vision is to create a self-service that anyone can use to sell tickets and host their events that will lead them to create live experiences and everlasting moments. This is why we created Vivento – to empower you to build your own spectacular event websites and to sell your tickets online without a worry.&lt;/p&gt;
+                    &lt;p&gt;Events connect people, allow people to share ideas, foster community and most of all, to spark change. &lt;/p&gt;
+                  &lt;/div&gt;
+                  &lt;div&gt;&lt;/div&gt;
+                  &lt;div&gt;
+                    &lt;h5&gt;PROJECT DETAILS&lt;/h5&gt;
+                  &lt;/div&gt;
+                  &lt;div class="details"&gt;
+                    &lt;table&gt;
+                       &lt;tr&gt;
+                          &lt;td class="td-width"&gt;CLIENT:&lt;/td&gt;
+                          &lt;td&gt;Rachelle Ivane Tan Uy, Philippines&lt;/td&gt;
+                       &lt;/tr&gt;
+                       &lt;tr&gt;
+                         &lt;td class="td-width"&gt;TECHNOLOGY :&lt;/td&gt;
+                         &lt;td&gt;Angular 1.0, Ruby on Rails 4.1, PostgreSQL, Capistrano, Braintree, Stripe, PayPal&lt;/td&gt;
+                       &lt;/tr&gt;
+                    &lt;/table&gt;
+                  &lt;/div&gt;
+                &lt;/div&gt;
+              </textarea>
+            </div>
+          </div>
+          <div class="w-portfolio-item type_extended">
+            <div class="w-portfolio-item-h">
+              <a class="w-portfolio-item-anchor" href="javascript:void(0);" data-id="2742">
+                <div class="w-portfolio-item-image"><img src="assets/Portfolio4.png" alt="SPOTGINI"></div>
+                <div class="w-portfolio-item-meta">
+                  <div class="w-portfolio-item-meta-h">
+                    <h2 class="w-portfolio-item-title">SPOTGINI</h2>
+                    <span class="w-portfolio-item-arrow"></span>
+                    <span class="w-portfolio-item-text"></span>
+                  </div>
+                </div>
+                <div class="w-portfolio-item-hover"><i class="fa fa-plus"></i></div>
+              </a>
+              <div class="w-portfolio-item-details" style="display: none;">
+                <div class="w-portfolio-item-details-h">
+                  <div class="w-portfolio-item-details-content"></div>
+                  <div class="w-portfolio-item-details-close"></div>
+                  <div class="w-portfolio-item-details-arrow to_prev"><i class="fa fa-angle-left"></i></div>
+                  <div class="w-portfolio-item-details-arrow to_next"><i class="fa fa-angle-right"></i></div>
+                </div>
+              </div>
+              <textarea class="w-portfolio-hidden-content" style="display:none">                &lt;div class="w-portfolio-item-details-content-preview"&gt;
+                  &lt;img src="assets/Portfolio4.png" alt="SPOTGINI"&gt;
+                  &lt;h3&gt;SPOTGINI&lt;/h3&gt;
+                &lt;/div&gt;
+                &lt;div class="w-portfolio-item-details-content-text"&gt;
+                  &lt;div&gt;
+                    &lt;p&gt;Spotgini is a simple but powerful way for individuals and entities to offer their time. You know your time is a finite resource. Spotgini's goal is to make the process of offering it seamless, efficient and help you get more out of it.&lt;/p&gt;
+                  &lt;/div&gt;
+                  &lt;div&gt;&lt;/div&gt;
+                  &lt;div&gt;
+                    &lt;h5&gt;PROJECT DETAILS&lt;/h5&gt;
+                  &lt;/div&gt;
+                  &lt;div class="details"&gt;
+                    &lt;table&gt;
+                      &lt;tr&gt;
+                        &lt;td class="td-width"&gt;CLIENT:&lt;/td&gt;
+                        &lt;td&gt;Amitshob, USA&lt;/td&gt;
+                      &lt;/tr&gt;
+                      &lt;tr&gt;
+                        &lt;td class="td-width"&gt;TECHNOLOGY :&lt;/td&gt;
+                        &lt;td&gt;Ruby on Rails 4.2, PostgreSQL, HTML, CSS, Javascript, Jquery, Stripe, Mailgun, Sendgrid&lt;/td&gt;
+                      &lt;/tr&gt;
+                    &lt;/table&gt;
+                  &lt;/div&gt;
+                &lt;/div&gt;
+              </textarea>
+            </div>
+          </div>
+          <div class="w-portfolio-item type_extended">
+            <div class="w-portfolio-item-h">
+              <a class="w-portfolio-item-anchor" href="javascript:void(0);" data-id="2742">
+                <div class="w-portfolio-item-image"><img src="assets/Portfolio5.png" alt="GPWALES"></div>
+                <div class="w-portfolio-item-meta">
+                  <div class="w-portfolio-item-meta-h">
+                    <h2 class="w-portfolio-item-title">GPWALES</h2>
+                    <span class="w-portfolio-item-arrow"></span>
+                    <span class="w-portfolio-item-text"></span>
+                  </div>
+                </div>
+                <div class="w-portfolio-item-hover"><i class="fa fa-plus"></i></div>
+              </a>
+              <div class="w-portfolio-item-details" style="display: none;">
+                <div class="w-portfolio-item-details-h">
+                  <div class="w-portfolio-item-details-content"></div>
+                  <div class="w-portfolio-item-details-close"></div>
+                  <div class="w-portfolio-item-details-arrow to_prev"><i class="fa fa-angle-left"></i></div>
+                  <div class="w-portfolio-item-details-arrow to_next"><i class="fa fa-angle-right"></i></div>
+                </div>
+              </div>
+              <textarea class="w-portfolio-hidden-content" style="display:none">                &lt;div class="w-portfolio-item-details-content-preview"&gt;
+                  &lt;img src="assets/Portfolio5.png" alt="GPWALES"&gt;
+                  &lt;h3&gt;GPWALES&lt;/h3&gt;
+                &lt;/div&gt;
+                &lt;div class="w-portfolio-item-details-content-text"&gt;
+                  &lt;div&gt;
+                    &lt;p&gt;Jobs - The aim is to get every general practice job (Doctors / Nurses / Receptionist etc.) in Wales in one place and easy to find and compare. Job adverts will stay online until they are filled. Individuals apply online, and practices can manage the applications from their dashboard. Job adverts will be shown online for a minimal cost to the practice.&lt;/p&gt;
+                    &lt;p&gt;Locums – a simple, straight-forward platform for doctors and practices to meet, and arrange locum shifts. Best of all – free for all to use.&lt;/p&gt;
+                    &lt;p&gt;Discounts – every practice buys the same things every month. Because we are buying supplies as individuals or as single practice – we are not getting bulk-buy discounts. We have negotiated discounts with suppliers so you can save on your monthly spending.&lt;/p&gt;
+                  &lt;/div&gt;
+                  &lt;div&gt;&lt;/div&gt;
+                  &lt;div&gt;
+                    &lt;h5&gt;PROJECT DETAILS&lt;/h5&gt;
+                  &lt;/div&gt;
+                  &lt;div class="details"&gt;
+                    &lt;table&gt;
+                      &lt;tr&gt;
+                        &lt;td class="td-width"&gt;CLIENT :&lt;/td&gt;
+                        &lt;td&gt;Ellis &amp; TJ, UK&lt;/td&gt;
+                      &lt;/tr&gt;
+                      &lt;tr&gt;
+                        &lt;td class="td-width"&gt;TECHNOLOGY :&lt;/td&gt;
+                        &lt;td&gt;Ruby on Rails 5.0, PostgreSQL, HAML, Foundation, Stripe&lt;/td&gt;
+                      &lt;/tr&gt;
+                    &lt;/table&gt;
+                  &lt;/div&gt;
+                &lt;/div&gt;
+              </textarea>
+            </div>
+          </div>
+          <div class="w-portfolio-item type_extended">
+            <div class="w-portfolio-item-h">
+              <a class="w-portfolio-item-anchor" href="javascript:void(0);" data-id="2742">
+                <div class="w-portfolio-item-image"><img src="assets/Portfolio6.png" alt="TEXTBEHIND"></div>
+                <div class="w-portfolio-item-meta">
+                  <div class="w-portfolio-item-meta-h">
+                    <h2 class="w-portfolio-item-title">TEXTBEHIND</h2>
+                    <span class="w-portfolio-item-arrow"></span>
+                    <span class="w-portfolio-item-text"></span>
+                  </div>
+                </div>
+                <div class="w-portfolio-item-hover"><i class="fa fa-plus"></i></div>
+              </a>
+              <div class="w-portfolio-item-details" style="display: none;">
+                <div class="w-portfolio-item-details-h">
+                  <div class="w-portfolio-item-details-content"></div>
+                  <div class="w-portfolio-item-details-close"></div>
+                  <div class="w-portfolio-item-details-arrow to_prev"><i class="fa fa-angle-left"></i></div>
+                  <div class="w-portfolio-item-details-arrow to_next" style="display: none;"><i class="fa fa-angle-right"></i></div>
+                </div>
+              </div>
+              <textarea class="w-portfolio-hidden-content" style="display:none">                &lt;div class="w-portfolio-item-details-content-preview"&gt;
+                  &lt;img src="assets/Portfolio6.png" alt="TEXTBEHIND"&gt;
+                  &lt;h3&gt;TEXTBEHIND&lt;/h3&gt;
+                &lt;/div&gt;
+                &lt;div class="w-portfolio-item-details-content-text"&gt;
+                  &lt;div&gt;
+                    &lt;p&gt;TextBehind enables you to communicate with any inmate nationwide using detailed text messages and greeting cards with multiple personal photos. You can also send money orders electronically from your smart phone or computer using credit cards, debit cards and paypal.&lt;/p&gt;
+                  &lt;/div&gt;
+                  &lt;div&gt;&lt;/div&gt;
+                  &lt;div&gt;
+                    &lt;h5&gt;PROJECT DETAILS&lt;/h5&gt;
+                  &lt;/div&gt;
+                  &lt;div class="details"&gt;
+                    &lt;table&gt;
+                      &lt;tr&gt;
+                        &lt;td class="td-width"&gt;CLIENT :&lt;/td&gt;
+                        &lt;td&gt;Zia Rana, USA&lt;/td&gt;
+                      &lt;/tr&gt;
+                      &lt;tr&gt;
+                        &lt;td class="td-width"&gt;TECHNOLOGY :&lt;/td&gt;
+                        &lt;td&gt;Ruby on Rails 3.2, Mysql, Stripe&lt;/td&gt;
+                      &lt;/tr&gt;
+                    &lt;/table&gt;
+                  &lt;/div&gt;
+                &lt;/div&gt;
+              </textarea>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<script type="text/javascript">
+
+    $(window).load(function(){
+
+
+      var $container = $('.portfolioContainer'),
+      $body = $('body'),
+      colW = 375,
+      columns = null;
+
+
+      $container.isotope({
+    // disable window resizing
+    resizable: true,
+    masonry: {
+      columnWidth: colW
+  }
+});
+
+      $(window).smartresize(function(){
+    // check if columns has changed
+    var currentColumns = Math.floor( ( $body.width() -30 ) / colW );
+    if ( currentColumns !== columns ) {
+      // set new column count
+      columns = currentColumns;
+      // apply width to container manually, then trigger relayout
+      $container.width( columns * colW )
+      .isotope('reLayout');
+  }
+
+  }).smartresize(); // trigger resize to set container width
+      $('.portfolioFilter a').click(function(){
+        $('.portfolioFilter .current').removeClass('current');
+        $(this).addClass('current');
+
+        var selector = $(this).attr('data-filter');
+        $container.isotope({
+
+            filter: selector,
+        });
+        return false;
+    });
+
+  });
+
+
+</script>
